@@ -1,93 +1,100 @@
 <My_include>
   
-  <!-- Comodity list & definition:
-   
-   * FBR_driver_MOX_new    : new MOX driver fuel for FBR
-   * FBR_driver_MOX_spent  : spent MOX driver fuel for FBR
-   * FBR_driver_MOX_cooled : spent MOX driver fuel for FBR AFTER COOLING
-   * FBR_driver_MOX_stored : spent MOX driver fuel for FBR AVAILABLE in storage
-   
-   * FBR_blanket_U_new    : new U blanket fuel for FBR
-   * FBR_blanket_U_spent  : spent U blanket fuel for FBR
-   * FBR_blanket_U_cooled : spent U blanket fuel for FBR AFTER COOLING
-   * FBR_blanket_U_stored : spent U blanket fuel for FBR AVAILABLE in storage
-   
-   
-   * FBR_driver_pu : pu from driver after separation
-   * FBR_driver_ru : ru from driver after separation
-   * FBR_driver_pu_stored : pu from FBR driver AVAILABLE in storage
-   * FBR_driver_ru_stored : ru from FBR driver AVAILABLE in storage
-   
-   * FBR_blanket_pu : pu from blanket after separation
-   * FBR_blanket_ru : ru from blanket after separation
-   * FBR_blanket_pu_stored : pu from FBR blanket AVAILABLE in storage
-   * FBR_blanket_ru_stored : ru from FBR blanket AVAILABLE in storage
-   
-   
-   * FBR_ma : ma after separation
-   * FBR_fp : fp after separation
-   * FBR_ma_stored : ma from FBR AVAILABLE in storage
-   * FBR_fp_stored : fp from FBR AVAILABLE in storage
-   
-   * EXT1_blanket_pu_stored : pu form EXT source 1
-   * EXT1_ru_stored         : ru from EXT source 1
-   
-   -->
   <!--      FBR fabrication      -->
   <prototype>
     <name>FBR_driver_fabrication</name>
+    <lifetime>960</lifetime>
     <config>
       <Mixer>
-        
-        <in_commods>
-          <val>E1_second_stored</val>
-          <val>E2_second_stored</val>
-        </in_commods>
-        
-        <mixing_ratios>
-          <val>8.13497471866829081e-01</val>
-          <val>1.86506111596205865e-01</val>
-        </mixing_ratios>
-        
-        <in_buf_sizes>
-          <val>5300</val>
-          <val>1300</val>
-        </in_buf_sizes>
-        
-        <throughput>6500</throughput>
-        <out_commod>FBR_driver_MOX_new</out_commod>
-        <out_buf_size>6500</out_buf_size>
-        
+
+        <in_streams>
+          <stream>
+            <info>
+              <mixing_ratio>E1_ratio</mixing_ratio>
+              <buf_size>E1_buf</buf_size>
+            </info>
+            <commodities>
+              <item>
+                <commodity>E1_str</commodity>
+                <pref>10</pref>
+              </item>
+              <item>
+                <commodity>E1_alt</commodity>
+                <pref>1</pref>
+              </item>
+            </commodities>
+          </stream>
+          <stream>
+            <info>
+              <mixing_ratio>J1_ratio</mixing_ratio>
+              <buf_size>J1_buf</buf_size>
+            </info>
+            <commodities>
+              <item>
+                <commodity>J1_str</commodity>
+                <pref>10</pref>
+              </item>
+              <item>
+                <commodity>J1_alt</commodity>
+                <pref>1</pref>
+              </item>
+            </commodities>
+          </stream>
+        </in_streams>
+
+        <throughput>29565</throughput>
+        <out_commod>FBR_MOX_new</out_commod>
+        <out_buf_size>29565</out_buf_size>
+
       </Mixer>
     </config>
   </prototype>
-  
+
   <prototype>
     <name>FBR_blanket_fabrication</name>
+    <!--    <lifetime>960</lifetime> -->
     <config>
       <Mixer>
-        
-        <in_commods>
-          <val>natl_u</val>
-          <val>E4_stored</val>
-        </in_commods>
-        
-        <mixing_ratios>
-          <val>1.56406978997421259e-01</val>
-          <val>8.43593021002578713e-01</val>
-        </mixing_ratios>
-        
-        <in_buf_sizes>
-          <val>3000</val>
-          <val>14000</val>
-        </in_buf_sizes>
-        
-        <throughput>16561</throughput>
+        <in_streams>
+          <stream>
+            <info>
+              <mixing_ratio>J1_ratio</mixing_ratio>
+              <buf_size>J1_buf</buf_size>
+            </info>
+            <commodities>
+              <item>
+                <commodity>J1_str</commodity>
+                <pref>10</pref>
+              </item>
+              <item>
+                <commodity>J1_alt</commodity>
+                <pref>1</pref>
+              </item>
+            </commodities>
+          </stream>
+
+          <stream>
+            <info>
+              <mixing_ratio>NU_ratio</mixing_ratio>
+              <buf_size>NU_buf</buf_size>
+            </info>
+            <commodities>
+              <item>
+                <commodity>NU</commodity>
+                <pref>1</pref>
+              </item>
+            </commodities>
+          </stream>
+
+        </in_streams>
+
+        <throughput>29565</throughput>
         <out_commod>FBR_blanket_new</out_commod>
-        <out_buf_size>16561</out_buf_size>
-        
+        <out_buf_size>29565</out_buf_size>
+
       </Mixer>
     </config>
+  </prototype>
   </prototype>
   
   
