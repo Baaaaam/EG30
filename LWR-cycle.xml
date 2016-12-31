@@ -1,0 +1,166 @@
+<My_include>
+
+
+  <!--      PWR fabrication      -->
+
+  <prototype>
+    <name>PWR_fabrication</name>
+    <!--    <lifetime>960</lifetime> -->
+    <config>
+      <Mixer>
+        <in_streams>
+          <stream>
+            <info>
+              <mixing_ratio>0.1643</mixing_ratio>
+              <buf_size>5000</buf_size>
+            </info>
+            <commodities>
+              <item>
+                <commodity>E1</commodity>
+                <pref>10</pref>
+              </item>
+              <item>
+                <commodity>E1_alt</commodity>
+                <pref>1</pref>
+              </item>
+            </commodities>
+          </stream>
+
+          <stream>
+            <info>
+              <mixing_ratio>NU_ratio</mixing_ratio>
+              <buf_size>NU_buf</buf_size>
+            </info>
+            <commodities>
+              <item>
+                <commodity>NU</commodity>
+                <pref>1</pref>
+              </item>
+            </commodities>
+          </stream>
+
+        </in_streams>
+
+        <throughput>29565</throughput>
+        <out_commod>PWR_MOX_new</out_commod>
+        <out_buf_size>29565</out_buf_size>
+
+      </Mixer>
+    </config>
+  </prototype>
+
+  <!-- *********************** -->
+
+  <!--       PWR reactor       -->
+  <prototype>
+    <name>PWR</name>
+    <lifetime>960</lifetime>
+    <config>
+      <Reactor>
+        <fuel_inrecipes>  <val>PWR_MOX_new</val></fuel_inrecipes>
+        <fuel_incommods>  <val>PWR_MOX_new</val></fuel_incommods>
+
+        <fuel_outrecipes> <val>PWR_MOX_spent</val></fuel_outrecipes>
+        <fuel_outcommods> <val>PWR_MOX_spent</val></fuel_outcommods>
+
+        <cycle_time>18</cycle_time>
+        <refuel_time>0</refuel_time>
+        <assem_size>29565</assem_size>
+        <n_assem_core>3</n_assem_core>
+        <n_assem_batch>1</n_assem_batch>
+        <power_cap>1000</power_cap>
+
+      </Reactor>
+    </config>
+  </prototype>
+<!-- *********************** -->
+
+<!--       PWR Cooling       -->
+<prototype>
+  <name>PWR_cooling</name>
+  <config>
+    <Storage>
+      <in_commods> <val>PWR_MOX_spent</val></in_commods>
+      <out_commods> <val>PWR_MOX_spent_cooled</val></out_commods>
+      <residence_time>84</residence_time>
+    </Storage>
+  </config>
+</prototype>
+<!-- *********************** -->
+
+<!--       PWR Storage       -->
+<prototype>
+  <name>PWR_storage</name>
+  <config>
+    <Storage>
+      <in_commods> <val>PWR_MOX_spent_cooled</val></in_commods>
+      <out_commods> <val>PWR_MOX_spent_stored</val></out_commods>
+      <residence_time>0</residence_time>
+    </Storage>
+  </config>
+</prototype>
+<!-- *********************** -->
+
+<!--      PWR Separation     -->
+<prototype>
+  <name>PWR_separation</name>
+  <config>
+    <Separations>
+      <feedbuf_size>1e100</feedbuf_size>
+
+      <feed_commods>
+        <val>PWR_MOX_spent_stored</val>
+      </feed_commods>
+
+      <feed_commod_prefs>
+        <val>1.0</val>
+      </feed_commod_prefs>
+
+      <throughput>1e100</throughput>
+
+      <streams>
+        <item>
+          <commod>J1</commod>
+          <info>
+            <buf_size>1e100</buf_size>
+            <efficiencies>
+              <item> <comp>Pu</comp> <eff>8.83838383838383757e-01</eff> </item>
+              <item> <comp>U</comp>  <eff>8.83838383838383757e-01</eff> </item>
+              <item> <comp>Np</comp> <eff>8.83838383838383757e-01</eff> </item>
+              <item> <comp>Am</comp> <eff>8.83838383838383757e-01</eff> </item>
+              <item> <comp>Cm</comp> <eff>8.83838383838383757e-01</eff> </item>
+            </efficiencies>
+          </info>
+        </item>
+      </streams>
+      <leftover_commod>waste</leftover_commod>
+
+    </Separations>
+  </config>
+</prototype>
+<!-- *********************** -->
+
+<!--      PWR U/pu storage     -->
+
+<prototype>
+  <name>Storage_J1</name>
+  <config>
+    <Storage>
+      <in_commods>
+        <val>J1</val>
+      </in_commods>
+      <out_commods>
+        <val>J1_stored</val>
+      </out_commods>
+      <residence_time>0</residence_time>
+    </Storage>
+  </config>
+</prototype>
+
+
+
+<!-- *********************** -->
+
+</My_include>
+
+
