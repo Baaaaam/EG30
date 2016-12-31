@@ -16,7 +16,7 @@
             </info>
             <commodities>
               <item>
-                <commodity>E1</commodity>
+                <commodity>E1_str</commodity>
                 <pref>10</pref>
               </item>
               <item>
