@@ -125,16 +125,11 @@
           <val>J1_alt_src</val>
           <val>E1_alt_src</val>
           <val>E2_alt_src</val>
-          <val>E3_alt_src</val>
-          <val>E4_alt_src</val>
 
 
           <val>Storage_J1</val>
-
           <val>Storage_E1</val>
           <val>Storage_E2</val>
-          <val>Storage_E3</val>
-          <val>Storage_E4</val>
 
 
           <val>PWR_cooling</val>
@@ -169,24 +164,21 @@
 
         <build_times>
           <val>1</val>
+
+          <val>1</val>
+ 
           <val>1</val>
           <val>1</val>
           <val>1</val>
+   
           <val>1</val>
           <val>1</val>
           <val>1</val>
+ 
           <val>1</val>
           <val>1</val>
           <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
+          
           <val>1</val>
 
           <val>1</val>
@@ -214,24 +206,21 @@
 
         <n_build>
           <val>1</val>
+
+          <val>1</val>
+ 
           <val>1</val>
           <val>1</val>
           <val>1</val>
+   
           <val>1</val>
           <val>1</val>
           <val>1</val>
+ 
           <val>1</val>
           <val>1</val>
           <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
+          
           <val>6</val>
 
           <val>6</val>
