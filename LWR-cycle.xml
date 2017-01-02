@@ -11,16 +11,16 @@
         <in_streams>
           <stream>
             <info>
-              <mixing_ratio>0.1643</mixing_ratio>
-              <buf_size>5000</buf_size>
+              <mixing_ratio>0.879677</mixing_ratio>
+              <buf_size>E2_buf</buf_size>
             </info>
             <commodities>
               <item>
-                <commodity>E1_str</commodity>
+                <commodity>E2_str</commodity>
                 <pref>10</pref>
               </item>
               <item>
-                <commodity>E1_alt</commodity>
+                <commodity>E2_alt</commodity>
                 <pref>1</pref>
               </item>
             </commodities>
@@ -28,7 +28,7 @@
 
           <stream>
             <info>
-              <mixing_ratio>NU_ratio</mixing_ratio>
+              <mixing_ratio>0.120323</mixing_ratio>
               <buf_size>NU_buf</buf_size>
             </info>
             <commodities>
