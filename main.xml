@@ -157,8 +157,10 @@
 
           <val>FBR_blanket_fabrication</val>
 
-          <val>FBR_blanket</val>
-          <val>FBR_blanket</val>
+          <val>FBR_in_blanket</val>
+          <val>FBR_in_blanket</val>
+          <val>FBR_out_blanket</val>
+          <val>FBR_out_blanket</val>
 
         </prototypes>
 
@@ -202,6 +204,8 @@
 
           <val>1</val>
           <val>960</val>
+          <val>1</val>
+          <val>960</val>
         </build_times>
 
         <n_build>
@@ -242,6 +246,8 @@
 
           <val>35</val>
 
+          <val>35</val>
+          <val>35</val>
           <val>35</val>
           <val>35</val>
         </n_build>

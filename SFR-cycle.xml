@@ -111,34 +111,67 @@
         <fuel_outrecipes> <val>FBR_driver_MOX_spent</val></fuel_outrecipes>
         <fuel_outcommods> <val>FBR_driver_MOX_spent</val></fuel_outcommods>
 
-        <cycle_time>18</cycle_time>
+<!-- BU/30days * Mcore/batch / P_eff = 74.865/(30) * 17497./4. / (1000*0.9) -->
+        <cycle_time>12</cycle_time>
         <refuel_time>0</refuel_time>
-        <assem_size>6458</assem_size>
-        <n_assem_core>3</n_assem_core>
+<!-- Core_inv / Core_Ass = 17497 / 4. --> 
+        <assem_size>4374.25</assem_size>
+        <n_assem_core>4</n_assem_core>
         <n_assem_batch>1</n_assem_batch>
-        <power_cap>400</power_cap>
+<!-- P_th * Ef_th * Cap_fac = 1000*40.0%*0.9 --> 
+        <power_cap>360</power_cap>
 
       </Reactor>
     </config>
   </prototype>
 
   <prototype>
-    <name>FBR_blanket</name>
+    <name>FBR_in_blanket</name>
     <lifetime>960</lifetime>
     <config>
       <Reactor>
         <fuel_inrecipes>  <val>FBR_blanket_new</val></fuel_inrecipes>
         <fuel_incommods>  <val>FBR_blanket_new</val></fuel_incommods>
 
-        <fuel_outrecipes> <val>FBR_blanket_spent</val></fuel_outrecipes>
+        <fuel_outrecipes> <val>FBR_in_blanket_spent</val></fuel_outrecipes>
         <fuel_outcommods> <val>FBR_blanket_spent</val></fuel_outcommods>
 
-        <cycle_time>18</cycle_time>
+<!-- Same as the Driver Core -->
+<!-- BU/30days * Mcore/batch / P_eff = 74.865/(30) * 17497./4. / (1000*0.9) -->
+        <cycle_time>12</cycle_time>
         <refuel_time>0</refuel_time>
-        <assem_size>16561</assem_size>
-        <n_assem_core>3</n_assem_core>
+<!-- Core_inv / Core_Ass = 3820 / 4. --> 
+        <assem_size>955</assem_size>
+        <n_assem_core>4</n_assem_core>
         <n_assem_batch>1</n_assem_batch>
-        <power_cap>1</power_cap>
+<!-- ******************************** --> 
+        <power_cap>0.1</power_cap>
+
+      </Reactor>
+    </config>
+  </prototype>
+
+  <prototype>
+    <name>FBR_out_blanket</name>
+    <lifetime>960</lifetime>
+    <config>
+      <Reactor>
+        <fuel_inrecipes>  <val>FBR_blanket_new</val></fuel_inrecipes>
+        <fuel_incommods>  <val>FBR_blanket_new</val></fuel_incommods>
+
+        <fuel_outrecipes> <val>FBR_out_blanket_spent</val></fuel_outrecipes>
+        <fuel_outcommods> <val>FBR_blanket_spent</val></fuel_outcommods>
+
+<!-- Same as the Driver Core -->
+<!-- BU/30days * Mcore/batch / P_eff = 74.865/(30) * 17497./4. / (1000*0.9) -->
+        <cycle_time>12</cycle_time>
+        <refuel_time>0</refuel_time>
+<!-- Core_inv / Core_Ass = 5282/8. --> 
+        <assem_size>660.250</assem_size>
+        <n_assem_core>8</n_assem_core>
+        <n_assem_batch>1</n_assem_batch>
+<!-- ******************************** --> 
+        <power_cap>0.1</power_cap>
 
       </Reactor>
     </config>
