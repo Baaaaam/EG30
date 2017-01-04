@@ -66,7 +66,7 @@
 
         <fuel_outrecipes> <val>PWR_MOX_spent</val></fuel_outrecipes>
         <fuel_outcommods> <val>PWR_MOX_spent</val></fuel_outcommods>
-
+<!-- BU/30days *Mcore/batch / P_eff = 50./(30)*88758./3./(3000*0.9) -->
         <cycle_time>18</cycle_time>
         <refuel_time>0</refuel_time>
 <!-- Core_inv / Core_Ass = 88758 / 3. --> 
