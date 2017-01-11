@@ -58,13 +58,12 @@
   <!--       PWR reactor       -->
   <prototype>
     <name>PWR</name>
-    <lifetime>960</lifetime>
     <config>
       <Reactor>
-        <fuel_inrecipes>  <val>PWR_MOX_new</val></fuel_inrecipes>
+        <fuel_inrecipes>  <val>PWR_MOX_N</val></fuel_inrecipes>
         <fuel_incommods>  <val>PWR_MOX_new</val></fuel_incommods>
 
-        <fuel_outrecipes> <val>PWR_MOX_spent</val></fuel_outrecipes>
+        <fuel_outrecipes> <val>PWR_MOX_S</val></fuel_outrecipes>
         <fuel_outcommods> <val>PWR_MOX_spent</val></fuel_outcommods>
 <!-- BU/30days *Mcore/batch / P_eff = 50./(30)*88758./3./(3000*0.9) -->
         <cycle_time>18</cycle_time>
@@ -126,15 +125,24 @@
 
       <streams>
         <item>
-          <commod>J1</commod>
+          <commod>J1_TRU</commod>
           <info>
             <buf_size>1e100</buf_size>
             <efficiencies>
-              <item> <comp>Pu</comp> <eff>8.83838383838383757e-01</eff> </item>
-              <item> <comp>U</comp>  <eff>8.83838383838383757e-01</eff> </item>
-              <item> <comp>Np</comp> <eff>8.83838383838383757e-01</eff> </item>
-              <item> <comp>Am</comp> <eff>8.83838383838383757e-01</eff> </item>
-              <item> <comp>Cm</comp> <eff>8.83838383838383757e-01</eff> </item>
+              <item> <comp>Pu</comp> <eff>8.83838E-01</eff> </item>
+              <item> <comp>U</comp>  <eff>1.78297E-01</eff> </item>
+              <item> <comp>Np</comp> <eff>8.83838E-01</eff> </item>
+              <item> <comp>Am</comp> <eff>8.83838E-01</eff> </item>
+              <item> <comp>Cm</comp> <eff>8.83838E-01</eff> </item>
+            </efficiencies>
+          </info>
+        </item>
+        <item>
+          <commod>J1_U</commod>
+          <info>
+            <buf_size>1e100</buf_size>
+            <efficiencies>
+              <item> <comp>U</comp>  <eff>7.05541E-01</eff> </item>
             </efficiencies>
           </info>
         </item>
@@ -149,20 +157,34 @@
 <!--      PWR U/pu storage     -->
 
 <prototype>
-  <name>Storage_J1</name>
+  <name>Storage_J1_TRU</name>
   <config>
     <Storage>
       <in_commods>
-        <val>J1</val>
+        <val>J1_TRU</val>
       </in_commods>
       <out_commods>
-        <val>J1_stored</val>
+        <val>J1_TRU_str</val>
       </out_commods>
       <residence_time>0</residence_time>
     </Storage>
   </config>
 </prototype>
 
+<prototype>
+  <name>Storage_J1_U</name>
+  <config>
+    <Storage>
+      <in_commods>
+        <val>J1_U</val>
+      </in_commods>
+      <out_commods>
+        <val>J1_U_str</val>
+      </out_commods>
+      <residence_time>0</residence_time>
+    </Storage>
+  </config>
+</prototype>
 
 
 <!-- *********************** -->

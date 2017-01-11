@@ -6,6 +6,7 @@
     <startmonth>1</startmonth>
     <startyear>2015</startyear>
     <decay>never</decay>
+    <explicit_inventory>true</explicit_inventory>
   </control>
 
   <archetypes>
@@ -30,7 +31,7 @@
     <config>
       <Source>
         <outcommod>NU</outcommod>
-        <outrecipe>NU</outrecipe>
+        <outrecipe>nu</outrecipe>
 
         <inventory_size>1e100</inventory_size>
         <throughput>1e100</throughput>
@@ -39,14 +40,26 @@
   </prototype>
 
   <prototype>
-    <name>J1_alt_src</name>
+    <name>J1_TRU_alt_src</name>
     <config>
       <Source>
-        <outcommod>J1_alt</outcommod>
-        <outrecipe>J1</outrecipe>
+        <outcommod>J1_TRU_alt</outcommod>
+        <outrecipe>J1_TRU</outrecipe>
 
-        <inventory_size>1931000</inventory_size>
-        <throughput>250000</throughput>
+        <inventory_size>1e100</inventory_size>
+        <throughput>1e100</throughput>
+      </Source>
+    </config>
+  </prototype>
+  <prototype>
+    <name>J1_U_alt_src</name>
+    <config>
+      <Source>
+        <outcommod>J1_U_alt</outcommod>
+        <outrecipe>J1_U</outrecipe>
+
+        <inventory_size>1e100</inventory_size>
+        <throughput>1e100</throughput>
       </Source>
     </config>
   </prototype>
@@ -57,8 +70,8 @@
       <Source>
         <outcommod>E1_alt</outcommod>
         <outrecipe>E1</outrecipe>
-        <inventory_size>2400000</inventory_size>
-        <throughput>2000000</throughput>
+        <inventory_size>1e100</inventory_size>
+        <throughput>1e100</throughput>
       </Source>
     </config>
   </prototype>
@@ -70,37 +83,12 @@
         <outcommod>E2_alt</outcommod>
         <outrecipe>E2</outrecipe>
 
-        <inventory_size>560000</inventory_size>
-        <throughput>200000</throughput>
-      </Source>
-    </config>
-  </prototype>
-
-  <prototype>
-    <name>E3_alt_src</name>
-    <config>
-      <Source>
-        <outcommod>E3_second_alt</outcommod>
-        <outrecipe>E3</outrecipe>
-
-        <inventory_size>381000</inventory_size>
-        <throughput>200000</throughput>
-      </Source>
-    </config>
-  </prototype>
-
-  <prototype>
-    <name>E4_src</name>
-    <config>
-      <Source>
-        <outcommod>E4_alt</outcommod>
-        <outrecipe>E4</outrecipe>
-
-        <inventory_size>6360000</inventory_size>
+        <inventory_size>1e100</inventory_size>
         <throughput>1e100</throughput>
       </Source>
     </config>
   </prototype>
+
 
 
   <prototype>
@@ -122,12 +110,14 @@
 
           <val>NU_src</val>
 
-          <val>J1_alt_src</val>
+          <val>J1_TRU_alt_src</val>
+          <val>J1_U_alt_src</val>
           <val>E1_alt_src</val>
           <val>E2_alt_src</val>
 
 
-          <val>Storage_J1</val>
+          <val>Storage_J1_TRU</val>
+          <val>Storage_J1_U</val>
           <val>Storage_E1</val>
           <val>Storage_E2</val>
 
@@ -139,7 +129,6 @@
           <val>PWR_fabrication</val>
 
           <val>PWR</val>
-          <val>PWR</val>
 
 
           <val>FBR_driver_MOX_cooling</val>
@@ -149,17 +138,13 @@
           <val>FBR_driver_fabrication</val>
 
           <val>FBR_driver</val>
-          <val>FBR_driver</val>
 
           <val>FBR_blanket_cooling</val>
           <val>FBR_blanket_storage</val>
           <val>FBR_blanket_separation</val>
 
-          <val>FBR_blanket_fabrication</val>
 
           <val>FBR_in_blanket</val>
-          <val>FBR_in_blanket</val>
-          <val>FBR_out_blanket</val>
           <val>FBR_out_blanket</val>
 
         </prototypes>
@@ -172,7 +157,9 @@
           <val>1</val>
           <val>1</val>
           <val>1</val>
+          <val>1</val>
    
+          <val>1</val>
           <val>1</val>
           <val>1</val>
           <val>1</val>
@@ -184,7 +171,6 @@
           <val>1</val>
 
           <val>1</val>
-          <val>957</val>
 
 
           <val>1</val>
@@ -194,18 +180,14 @@
           <val>1</val>
 
           <val>1</val>
-          <val>957</val>
 
           <val>1</val>
           <val>1</val>
           <val>1</val>
 
-          <val>1</val>
 
           <val>1</val>
-          <val>960</val>
           <val>1</val>
-          <val>960</val>
         </build_times>
 
         <n_build>
@@ -216,7 +198,9 @@
           <val>1</val>
           <val>1</val>
           <val>1</val>
+          <val>1</val>
    
+          <val>1</val>
           <val>1</val>
           <val>1</val>
           <val>1</val>
@@ -225,20 +209,10 @@
           <val>1</val>
           <val>1</val>
           
-          <val>6</val>
+          <val>17</val>
 
-          <val>6</val>
-          <val>6</val>
+          <val>17</val>
 
-
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-
-          <val>35</val>
-
-          <val>35</val>
-          <val>35</val>
 
           <val>1</val>
           <val>1</val>
@@ -246,10 +220,15 @@
 
           <val>35</val>
 
-          <val>35</val>
-          <val>35</val>
-          <val>35</val>
-          <val>35</val>
+          <val>208</val>
+
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+
+
+          <val>208</val>
+          <val>208</val>
         </n_build>
       </DeployInst>
     </config>
