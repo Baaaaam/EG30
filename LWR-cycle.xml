@@ -13,7 +13,7 @@
             <info>
               <mixing_ratio>0.879677</mixing_ratio>
 <!-- throughput * mixing_ratio = 29586.0 * 0.879677 -->
-              <buf_size>26027</buf_size>
+              <buf_size>6600</buf_size>
             </info>
             <commodities>
               <item>
@@ -31,7 +31,7 @@
             <info>
               <mixing_ratio>0.120323</mixing_ratio>
 <!-- throughput * mixing_ratio = 29586.0 * 0.120323 -->
-              <buf_size>3560</buf_size>
+              <buf_size>910</buf_size>
             </info>
             <commodities>
               <item>
@@ -45,8 +45,8 @@
         <out_commod>PWR_MOX_new</out_commod>
 
 <!-- 1 Core / month -->
-        <throughput>29586.0</throughput>
-        <out_buf_size>29586.0</out_buf_size>
+        <throughput>7500</throughput>
+        <out_buf_size>30000</out_buf_size>
 <!-- ************** -->
 
       </Mixer>
