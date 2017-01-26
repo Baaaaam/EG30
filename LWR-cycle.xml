@@ -1,11 +1,6 @@
 <My_include>
-
-
-    <!--      PWR fabrication      -->
-
     <prototype>
         <name>PWR_fabrication</name>
-        <!--    <lifetime>960</lifetime> -->
         <config>
             <Mixer>
                 <in_streams>
@@ -25,7 +20,6 @@
                             </item>
                         </commodities>
                     </stream>
-
                     <stream>
                         <info>
                             <mixing_ratio>0.120323</mixing_ratio> <!-- throughput * mixing_ratio = 29586.0 * 0.120323 -->
@@ -38,7 +32,6 @@
                             </item>
                         </commodities>
                     </stream>
-
                 </in_streams>
                 <out_commod>PWR_MOX_new</out_commod>
                 <throughput>7500</throughput> <!-- 1 Core / month -->
@@ -77,7 +70,7 @@
             <Storage>
                 <in_commods> <val>PWR_MOX_spent</val></in_commods>
                 <out_commods> <val>PWR_MOX_spent_cooled</val></out_commods>
-                <residence_time>84</residence_time>
+                <residence_time>81</residence_time>
             </Storage>
         </config>
     </prototype>
@@ -102,7 +95,6 @@
         <config>
             <Separations>
                 <feedbuf_size>1e100</feedbuf_size>
-
                 <feed_commods>
                     <val>PWR_MOX_spent_stored</val>
                 </feed_commods>
@@ -120,7 +112,7 @@
                             <buf_size>1e100</buf_size>
                             <efficiencies>
                                 <item> <comp>Pu</comp> <eff>8.83838E-01</eff> </item>
-                                <item> <comp>U</comp>  <eff>1.78297E-01</eff> </item>
+                                <item> <comp>U</comp>  <eff>1.78306E-01</eff> </item>
                                 <item> <comp>Np</comp> <eff>8.83838E-01</eff> </item>
                                 <item> <comp>Am</comp> <eff>8.83838E-01</eff> </item>
                                 <item> <comp>Cm</comp> <eff>8.83838E-01</eff> </item>
@@ -138,7 +130,6 @@
                     </item>
                 </streams>
                 <leftover_commod>waste</leftover_commod>
-
             </Separations>
         </config>
     </prototype>

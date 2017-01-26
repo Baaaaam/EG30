@@ -173,7 +173,7 @@
           <Storage>
               <in_commods> <val>FBR_driver_MOX_spent</val></in_commods>
               <out_commods> <val>FBR_driver_MOX_cooled</val></out_commods>
-              <residence_time>84</residence_time>
+              <residence_time>81</residence_time>
           </Storage>
       </config>
   </prototype>
@@ -244,7 +244,7 @@
           <Storage>
               <in_commods> <val>FBR_blanket_spent</val></in_commods>
               <out_commods> <val>FBR_blanket_cooled</val></out_commods>
-              <residence_time>84</residence_time>
+              <residence_time>81</residence_time>
           </Storage>
       </config>
   </prototype>
