@@ -41,7 +41,7 @@
 
     <prototype>
         <name>J1_TRU_alt_src</name>
-        <lifetime>120</lifetime>
+        <lifetime>240</lifetime>
         <config>
             <Source>
                 <outcommod>J1_TRU_alt</outcommod>
@@ -55,7 +55,7 @@
 
     <prototype>
         <name>E1_alt_src</name>
-        <lifetime>120</lifetime>
+        <lifetime>240</lifetime>
         <config>
             <Source>
                 <outcommod>E1_alt</outcommod>
@@ -68,7 +68,7 @@
 
     <prototype>
         <name>E2_alt_src</name>
-        <lifetime>120</lifetime>
+        <lifetime>240</lifetime>
         <config>
             <Source>
                 <outcommod>E2_alt</outcommod>
