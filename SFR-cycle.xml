@@ -177,37 +177,23 @@
           </Storage>
       </config>
   </prototype>
-  <!-- *********************** -->
-
-  <!--       FBR driver Storage       -->
-  <prototype>
-      <name>FBR_driver_MOX_storage</name>
-      <config>
-          <Storage>
-              <in_commods> <val>FBR_driver_MOX_cooled</val></in_commods>
-              <out_commods> <val>FBR_driver_MOX_stored</val></out_commods>
-              <residence_time>0</residence_time>
-          </Storage>
-      </config>
-  </prototype>
-  <!-- *********************** -->
 
   <!--      FBR driver Separation     -->
   <prototype>
       <name>FBR_driver_separation</name>
       <config>
           <Separations>
-              <feedbuf_size>107537</feedbuf_size>
+              <feedbuf_size>1e100</feedbuf_size>
 
               <feed_commods>
-                  <val>FBR_driver_MOX_stored</val>
+                  <val>FBR_driver_MOX_cooled</val>
               </feed_commods>
 
               <feed_commod_prefs>
                   <val>1.0</val>
               </feed_commod_prefs>
 
-              <throughput>83333.3333</throughput>
+              <throughput>1e100</throughput>
 
               <streams>
                   <item>
@@ -215,11 +201,11 @@
                       <info>
                           <buf_size>1e100</buf_size>
                           <efficiencies>
-                              <item> <comp>Pu</comp> <eff>8.83838383838383757e-01</eff> </item>
-                              <item> <comp>U</comp>  <eff>8.83838383838383757e-01</eff> </item>
-                              <item> <comp>Np</comp> <eff>8.83838383838383757e-01</eff> </item>
-                              <item> <comp>Am</comp> <eff>8.83838383838383757e-01</eff> </item>
-                              <item> <comp>Cm</comp> <eff>8.83838383838383757e-01</eff> </item>
+                              <item> <comp>Pu</comp> <eff>9.88e-01</eff> </item>
+                              <item> <comp>U</comp>  <eff>9.88e-01</eff> </item>
+                              <item> <comp>Np</comp> <eff>9.88e-01</eff> </item>
+                              <item> <comp>Am</comp> <eff>9.88e-01</eff> </item>
+                              <item> <comp>Cm</comp> <eff>9.88e-01</eff> </item>
                           </efficiencies>
                       </info>
                   </item>
@@ -230,14 +216,7 @@
           </Separations>
       </config>
   </prototype>
-  <!-- *********************** -->
 
-
-
-  <!-- *********************** -->
-
-
-  <!--       FBR blanket Cooling       -->
   <prototype>
       <name>FBR_blanket_cooling</name>
       <config>
@@ -248,37 +227,23 @@
           </Storage>
       </config>
   </prototype>
-  <!-- *********************** -->
 
-  <!--       FBR blanket Storage       -->
-  <prototype>
-      <name>FBR_blanket_storage</name>
-      <config>
-          <Storage>
-              <in_commods> <val>FBR_blanket_cooled</val></in_commods>
-              <out_commods> <val>FBR_blanket_stored</val></out_commods>
-              <residence_time>0</residence_time>
-          </Storage>
-      </config>
-  </prototype>
-  <!-- *********************** -->
 
-  <!--      FBR blanket Separation     -->
   <prototype>
       <name>FBR_blanket_separation</name>
       <config>
           <Separations>
-              <feedbuf_size>107537</feedbuf_size>
+              <feedbuf_size>1e100</feedbuf_size>
 
               <feed_commods>
-                  <val>FBR_blanket_stored</val>
+                  <val>FBR_blanket_cooled</val>
               </feed_commods>
 
               <feed_commod_prefs>
                   <val>1.0</val>
               </feed_commod_prefs>
 
-              <throughput>83333.3333</throughput>
+              <throughput>1e100</throughput>
 
               <streams>
                   <item>
@@ -286,11 +251,11 @@
                       <info>
                           <buf_size>1e100</buf_size>
                           <efficiencies>
-                              <item> <comp>Pu</comp> <eff>8.83838383838383757e-01</eff> </item>
-                              <item> <comp>U</comp>  <eff>8.83838383838383757e-01</eff> </item>
-                              <item> <comp>Np</comp> <eff>8.83838383838383757e-01</eff> </item>
-                              <item> <comp>Am</comp> <eff>8.83838383838383757e-01</eff> </item>
-                              <item> <comp>Cm</comp> <eff>8.83838383838383757e-01</eff> </item>
+                              <item> <comp>Pu</comp> <eff>9.88e-01</eff> </item>
+                              <item> <comp>U</comp>  <eff>9.88e-01</eff> </item>
+                              <item> <comp>Np</comp> <eff>9.88e-01</eff> </item>
+                              <item> <comp>Am</comp> <eff>9.88e-01</eff> </item>
+                              <item> <comp>Cm</comp> <eff>9.88e-01</eff> </item>
                           </efficiencies>
                       </info>
                   </item>
