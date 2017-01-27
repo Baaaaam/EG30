@@ -63,7 +63,7 @@
               <fuel_outcommods> <val>FBR_driver_MOX_spent</val></fuel_outcommods>
 
 <!-- BU/30days * Mcore/batch / P_eff = 74.865/(30) * 17497./4. / (1000*0.9) -->
-        <cycle_time>12</cycle_time>
+        <cycle_time>13</cycle_time>
         <refuel_time>0</refuel_time>
 <!-- Core_inv / Core_Ass = 17497 / 4. --> 
         <assem_size>4374.25</assem_size>
