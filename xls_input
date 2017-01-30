@@ -1,0 +1,27 @@
+RE1 NA:PWR F1:PWR_MOX_new LT:960y CA:0.9 PO:1
+RE2 NA:FBR_driver F2:FBR_MOX_N LT:960y CA:0.9 PO:0.4
+RE3 NA:FBR_in_blanket F3:J1_U_str,NU CA:0.9 PO:0.
+RE4 NA:FBR_out_blanket F4:J1_U_str,NU CA:0.9 PO:0.
+
+
+RP_R1_F1 NA:PWR_separation CO:PWR_MOX_spent_cooled
+RP_R2_F2 NA:FBR_driver_separation CO:FBR_driver_MOX_cooled
+RP_R3_F3 NA:FBR_blanket_separation CO:FBR_blanket_cooled
+
+
+CO_R1_F1 PWR_cooling
+CO_R2_F2 FBR_driver_MOX_cooling
+CO_R3_F3 FBR_blanket_cooling
+
+
+WR_R1_F1 Storage_J1_TRU
+WR_R2_F2 Storage_J1_U
+WR_R3_F3 Storage_E1
+WR_R4_F4 Storage_E2
+
+
+
+ST Storage_J1_TRU,Storage_E1,Storage_E2
+ST_DU LWR_A_storage
+ST_RU Storage_J1_U
+WT waste
