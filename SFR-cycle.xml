@@ -54,6 +54,7 @@
   <!--       FBR reactor       -->
   <prototype>
       <name>FBR_driver</name>
+      <lifetime>720</lifetime>
       <config>
           <Reactor>
               <fuel_inrecipes>  <val>FBR_MOX_N</val></fuel_inrecipes>
@@ -78,6 +79,7 @@
 
   <prototype>
       <name>FBR_in_blanket</name>
+      <lifetime>720</lifetime>
       <config>
           <Reactor>
               <fuel_inrecipes>
@@ -121,6 +123,7 @@
 
   <prototype>
       <name>FBR_out_blanket</name>
+      <lifetime>720</lifetime>
       <config>
           <Reactor>
               <fuel_inrecipes>

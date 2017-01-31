@@ -2,7 +2,7 @@
 
     <schematype>flat</schematype>
     <control>
-        <duration>1200</duration>
+        <duration>1800</duration>
         <startmonth>1</startmonth>
         <startyear>2015</startyear>
         <decay>never</decay>
@@ -11,6 +11,7 @@
 
     <archetypes>
         <spec> <lib>cycamore</lib> <name>Source</name></spec>
+        <spec> <lib>cycamore</lib> <name>GroupInst</name></spec>
         <spec> <lib>cycamore</lib> <name>DeployInst</name></spec>
         <spec> <lib>cycamore</lib> <name>Sink</name></spec>
         <spec> <lib>cycamore</lib> <name>Enrichment</name> </spec>
@@ -90,7 +91,7 @@
     </prototype>
 
     <prototype>
-        <name>deployer_PWR_CHAIN</name>
+        <name>deployer_main_CHAIN</name>
         <config>
             <DeployInst>
                 <prototypes>
@@ -114,23 +115,13 @@
 
                     <val>PWR_fabrication</val>
 
-                    <val>PWR</val>
-
-
                     <val>FBR_driver_MOX_cooling</val>
                     <val>FBR_driver_separation</val>
 
                     <val>FBR_driver_fabrication</val>
 
-                    <val>FBR_driver</val>
-
                     <val>FBR_blanket_cooling</val>
                     <val>FBR_blanket_separation</val>
-
-
-                    <val>FBR_in_blanket</val>
-                    <val>FBR_out_blanket</val>
-
                 </prototypes>
 
                 <build_times>
@@ -152,19 +143,11 @@
 
                     <val>1</val>
 
-                    <val>1</val>
-
 
                     <val>1</val>
                     <val>1</val>
 
                     <val>1</val>
-
-                    <val>1</val>
-
-                    <val>1</val>
-                    <val>1</val>
-
 
                     <val>1</val>
                     <val>1</val>
@@ -186,33 +169,936 @@
 
                     <val>1</val>
                     <val>1</val>
-
-                    <val>18</val>
-
-                    <val>18</val>
-
+                    <val>17</val>
 
                     <val>1</val>
                     <val>1</val>
 
                     <val>35</val>
 
-                    <val>208</val>
-
                     <val>1</val>
                     <val>1</val>
-
-
-                    <val>208</val>
-                    <val>208</val>
                 </n_build>
             </DeployInst>
         </config>
     </prototype>
 
 
-    <agent> <name>deployer</name> <prototype>deployer_PWR_CHAIN</prototype> </agent>
+    <agent> <name>deployer_1</name> <prototype>deployer_main_CHAIN</prototype> </agent>
 
 
+    <prototype>
+        <name>deployer_PWR_init_CHAIN</name>
+        <config>
+            <DeployInst>
+                <prototypes>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                </prototypes>
+                <build_times>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                </build_times>
+                <lifetimes>
+                    <val>181</val>
+                    <val>205</val>
+                    <val>229</val>
+                    <val>253</val>
+                    <val>277</val>
+                    <val>301</val>
+                    <val>325</val>
+                    <val>349</val>
+                    <val>373</val>
+                    <val>397</val>
+                    <val>421</val>
+                    <val>445</val>
+                    <val>469</val>
+                    <val>493</val>
+                    <val>517</val>
+                    <val>541</val>
+                    <val>565</val>
+                </lifetimes>
+
+                <n_build>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                </n_build>
+            </DeployInst>
+        </config>
+    </prototype>
+    <agent> <name>deployer_2</name> <prototype>deployer_PWR_init_CHAIN</prototype> </agent>
+    <prototype>
+        <name>deployer_PWR_CHAIN</name>
+        <config>
+            <DeployInst>
+                <prototypes>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                </prototypes>
+                <build_times>
+                    <val>181</val>
+                    <val>205</val>
+                    <val>229</val>
+                    <val>253</val>
+                    <val>277</val>
+                    <val>301</val>
+                    <val>325</val>
+                    <val>349</val>
+                    <val>373</val>
+                    <val>397</val>
+                    <val>421</val>
+                    <val>445</val>
+                    <val>469</val>
+                    <val>493</val>
+                    <val>517</val>
+                    <val>541</val>
+                    <val>565</val>
+                </build_times>
+                <n_build>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                </n_build>
+            </DeployInst>
+        </config>
+    </prototype>
+    <agent> <name>deployer_2b</name> <prototype>deployer_PWR_CHAIN</prototype> </agent>
+    <prototype>
+        <name>deployer_PWR_CHAIN_2</name>
+        <config>
+            <DeployInst>
+                <prototypes>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                </prototypes>
+                <build_times>
+                    <val>901</val>
+                    <val>925</val>
+                    <val>949</val>
+                    <val>973</val>
+                    <val>997</val>
+                    <val>1021</val>
+                    <val>1045</val>
+                    <val>1069</val>
+                    <val>1093</val>
+                    <val>1117</val>
+                    <val>1141</val>
+                    <val>1165</val>
+                    <val>1189</val>
+                    <val>1213</val>
+                    <val>1237</val>
+                    <val>1261</val>
+                    <val>1285</val>
+                </build_times>
+                <n_build>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                </n_build>
+            </DeployInst>
+        </config>
+    </prototype>
+    <agent> <name>deployer_2c</name> <prototype>deployer_PWR_CHAIN_2</prototype> </agent>
+
+    <prototype>
+        <name>deployer_FBR_init_CHAIN</name>
+        <config>
+            <DeployInst>
+                <prototypes>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_driver</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                    <val>FBR_out_blanket</val>
+                </prototypes>
+                
+                <build_times>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                </build_times>
+                
+                <lifetimes>
+                    <val>181</val>
+                    <val>193</val>
+                    <val>205</val>
+                    <val>217</val>
+                    <val>229</val>
+                    <val>241</val>
+                    <val>253</val>
+                    <val>265</val>
+                    <val>277</val>
+                    <val>289</val>
+                    <val>301</val>
+                    <val>313</val>
+                    <val>325</val>
+                    <val>337</val>
+                    <val>349</val>
+                    <val>361</val>
+                    <val>373</val>
+                    <val>385</val>
+                    <val>397</val>
+                    <val>409</val>
+                    <val>421</val>
+                    <val>433</val>
+                    <val>445</val>
+                    <val>457</val>
+                    <val>469</val>
+                    <val>481</val>
+                    <val>493</val>
+                    <val>505</val>
+                    <val>517</val>
+                    <val>529</val>
+                    <val>541</val>
+                    <val>553</val>
+                    <val>565</val>
+                    <val>577</val>
+                    <val>589</val>
+                    <val>181</val>
+                    <val>193</val>
+                    <val>205</val>
+                    <val>217</val>
+                    <val>229</val>
+                    <val>241</val>
+                    <val>253</val>
+                    <val>265</val>
+                    <val>277</val>
+                    <val>289</val>
+                    <val>301</val>
+                    <val>313</val>
+                    <val>325</val>
+                    <val>337</val>
+                    <val>349</val>
+                    <val>361</val>
+                    <val>373</val>
+                    <val>385</val>
+                    <val>397</val>
+                    <val>409</val>
+                    <val>421</val>
+                    <val>433</val>
+                    <val>445</val>
+                    <val>457</val>
+                    <val>469</val>
+                    <val>481</val>
+                    <val>493</val>
+                    <val>505</val>
+                    <val>517</val>
+                    <val>529</val>
+                    <val>541</val>
+                    <val>553</val>
+                    <val>565</val>
+                    <val>577</val>
+                    <val>589</val>
+                    <val>181</val>
+                    <val>193</val>
+                    <val>205</val>
+                    <val>217</val>
+                    <val>229</val>
+                    <val>241</val>
+                    <val>253</val>
+                    <val>265</val>
+                    <val>277</val>
+                    <val>289</val>
+                    <val>301</val>
+                    <val>313</val>
+                    <val>325</val>
+                    <val>337</val>
+                    <val>349</val>
+                    <val>361</val>
+                    <val>373</val>
+                    <val>385</val>
+                    <val>397</val>
+                    <val>409</val>
+                    <val>421</val>
+                    <val>433</val>
+                    <val>445</val>
+                    <val>457</val>
+                    <val>469</val>
+                    <val>481</val>
+                    <val>493</val>
+                    <val>505</val>
+                    <val>517</val>
+                    <val>529</val>
+                    <val>541</val>
+                    <val>553</val>
+                    <val>565</val>
+                    <val>577</val>
+                    <val>589</val>
+                </lifetimes>
+
+                <n_build>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                </n_build>
+            </DeployInst>
+        </config>
+    </prototype>
+
+  <prototype>
+    <name>FBR_plant</name>
+    <config>
+      <GroupInst>
+        <prototypes>
+            <val>FBR_driver</val>
+            <val>FBR_in_blanket</val>
+            <val>FBR_out_blanket</val>
+        </prototypes>
+      </GroupInst>
+    </config>
+  </prototype>
+
+    <agent> <name>deployer_3</name> <prototype>deployer_FBR_init_CHAIN</prototype> </agent>
+
+    <prototype>
+        <name>deployer_FBR_CHAIN</name>
+        <config>
+            <DeployInst>
+                <prototypes>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                </prototypes>
+                
+                <build_times>
+                    <val>181</val>
+                    <val>193</val>
+                    <val>205</val>
+                    <val>217</val>
+                    <val>229</val>
+                    <val>241</val>
+                    <val>253</val>
+                    <val>265</val>
+                    <val>277</val>
+                    <val>289</val>
+                    <val>301</val>
+                    <val>313</val>
+                    <val>325</val>
+                    <val>337</val>
+                    <val>349</val>
+                    <val>361</val>
+                    <val>373</val>
+                    <val>385</val>
+                    <val>397</val>
+                    <val>409</val>
+                    <val>421</val>
+                    <val>433</val>
+                    <val>445</val>
+                    <val>457</val>
+                    <val>469</val>
+                    <val>481</val>
+                    <val>493</val>
+                    <val>505</val>
+                    <val>517</val>
+                    <val>529</val>
+                    <val>541</val>
+                    <val>553</val>
+                    <val>565</val>
+                    <val>577</val>
+                    <val>589</val>
+                </build_times> 
+
+                <n_build>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                </n_build>
+            </DeployInst>
+        </config>
+    </prototype>
+    <agent> <name>deployer_3b</name> <prototype>deployer_FBR_CHAIN</prototype> </agent>
+
+    <prototype>
+        <name>deployer_FBR_CHAIN_2</name>
+        <config>
+            <DeployInst>
+                <prototypes>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                </prototypes>
+                
+                <build_times>
+                    <val>901</val>
+                    <val>913</val>
+                    <val>925</val>
+                    <val>937</val>
+                    <val>949</val>
+                    <val>961</val>
+                    <val>973</val>
+                    <val>985</val>
+                    <val>997</val>
+                    <val>1009</val>
+                    <val>1021</val>
+                    <val>1033</val>
+                    <val>1045</val>
+                    <val>1057</val>
+                    <val>1069</val>
+                    <val>1081</val>
+                    <val>1093</val>
+                    <val>1105</val>
+                    <val>1117</val>
+                    <val>1129</val>
+                    <val>1141</val>
+                    <val>1153</val>
+                    <val>1165</val>
+                    <val>1177</val>
+                    <val>1189</val>
+                    <val>1201</val>
+                    <val>1213</val>
+                    <val>1225</val>
+                    <val>1237</val>
+                    <val>1249</val>
+                    <val>1261</val>
+                    <val>1273</val>
+                    <val>1285</val>
+                    <val>1297</val>
+                    <val>1309</val>
+                </build_times> 
+
+                <n_build>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                </n_build>
+            </DeployInst>
+        </config>
+    </prototype>
+    <agent> <name>deployer_3c</name> <prototype>deployer_FBR_CHAIN_2</prototype> </agent>
 
 </simulation>
