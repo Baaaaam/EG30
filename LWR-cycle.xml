@@ -44,7 +44,6 @@
 
     <prototype>
         <name>PWR</name>
-        <lifetime>720</lifetime>
         <config>
             <Reactor>
                 <fuel_inrecipes>  <val>PWR_MOX_N</val></fuel_inrecipes>
