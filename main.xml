@@ -338,7 +338,7 @@
     </prototype>
     <agent> <name>deployer_2b</name> <prototype>deployer_PWR_CHAIN</prototype> </agent>
     <prototype>
-        <name>deployer_PWR_CHAIN_2</name>
+        <name>deployer_PWR_CHAIN_3</name>
         <config>
             <DeployInst>
                 <prototypes>
@@ -402,6 +402,72 @@
         </config>
     </prototype>
     <agent> <name>deployer_2c</name> <prototype>deployer_PWR_CHAIN_2</prototype> </agent>
+
+    <prototype>
+        <name>deployer_PWR_CHAIN_2</name>
+        <config>
+            <DeployInst>
+                <prototypes>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                    <val>PWR</val>
+                </prototypes>
+                <build_times>
+                    <val>1621</val>
+                    <val>1645</val>
+                    <val>1669</val>
+                    <val>1693</val>
+                    <val>1717</val>
+                    <val>1741</val>
+                    <val>1765</val>
+                    <val>1789</val>
+                    <val>1813</val>
+                    <val>1837</val>
+                    <val>1861</val>
+                    <val>1885</val>
+                    <val>1909</val>
+                    <val>1933</val>
+                    <val>1957</val>
+                    <val>1981</val>
+                    <val>2005</val>
+                </build_times>
+                <n_build>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                </n_build>
+            </DeployInst>
+        </config>
+    </prototype>
+    <agent> <name>deployer_2d</name> <prototype>deployer_PWR_CHAIN_3</prototype> </agent>
 
     <prototype>
         <name>deployer_FBR_init_CHAIN</name>
@@ -742,6 +808,7 @@
                     <val>6</val>
                     <val>6</val>
                     <val>6</val>
+                    <val>4</val>
                     <val>6</val>
                     <val>6</val>
                     <val>6</val>
@@ -776,6 +843,7 @@
                     <val>6</val>
                     <val>6</val>
                     <val>6</val>
+                    <val>4</val>
                     <val>6</val>
                     <val>6</val>
                     <val>6</val>
@@ -810,9 +878,7 @@
                     <val>6</val>
                     <val>6</val>
                     <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
+                    <val>4</val>
                     <val>6</val>
                     <val>6</val>
                     <val>6</val>
@@ -948,7 +1014,7 @@
                     <val>6</val>
                     <val>6</val>
                     <val>6</val>
-                    <val>6</val>
+                    <val>4</val>
                     <val>6</val>
                     <val>6</val>
                     <val>6</val>
@@ -1070,7 +1136,7 @@
                     <val>6</val>
                     <val>6</val>
                     <val>6</val>
-                    <val>6</val>
+                    <val>4</val>
                     <val>6</val>
                     <val>6</val>
                     <val>6</val>
@@ -1100,5 +1166,127 @@
         </config>
     </prototype>
     <agent> <name>deployer_3c</name> <prototype>deployer_FBR_CHAIN_2</prototype> </agent>
+
+    <prototype>
+        <name>deployer_FBR_CHAIN_3</name>
+        <config>
+            <DeployInst>
+                <prototypes>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                    <val>FBR_plant</val>
+                </prototypes>
+                
+                <build_times>
+                    <val>1621</val>
+                    <val>1633</val>
+                    <val>1645</val>
+                    <val>1657</val>
+                    <val>1669</val>
+                    <val>1681</val>
+                    <val>1693</val>
+                    <val>1705</val>
+                    <val>1717</val>
+                    <val>1729</val>
+                    <val>1741</val>
+                    <val>1753</val>
+                    <val>1765</val>
+                    <val>1777</val>
+                    <val>1789</val>
+                    <val>1801</val>
+                    <val>1813</val>
+                    <val>1825</val>
+                    <val>1837</val>
+                    <val>1849</val>
+                    <val>1861</val>
+                    <val>1873</val>
+                    <val>1885</val>
+                    <val>1897</val>
+                    <val>1909</val>
+                    <val>1921</val>
+                    <val>1933</val>
+                    <val>1945</val>
+                    <val>1957</val>
+                    <val>1969</val>
+                    <val>1981</val>
+                    <val>1993</val>
+                    <val>2005</val>
+                    <val>2017</val>
+                    <val>2029</val>
+                </build_times> 
+
+                <n_build>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>4</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                    <val>6</val>
+                </n_build>
+            </DeployInst>
+        </config>
+    </prototype>
+    <agent> <name>deployer_3d</name> <prototype>deployer_FBR_CHAIN_3</prototype> </agent>
 
 </simulation>

@@ -5,7 +5,6 @@
         <name>FBR_driver_fabrication</name>
         <config>
             <Mixer>
-
                 <in_streams>
                     <stream>
                         <info>
@@ -67,7 +66,7 @@
         <cycle_time>13</cycle_time>
         <refuel_time>0</refuel_time>
 <!-- Core_inv / Core_Ass = 17497 / 4. --> 
-        <assem_size>4374.25</assem_size>
+        <assem_size>4264.9</assem_size>
         <n_assem_core>4</n_assem_core>
         <n_assem_batch>1</n_assem_batch>
 <!-- P_th * Ef_th * Cap_fac = 1000*40.0%*0.9 --> 
@@ -108,10 +107,10 @@
 
 <!-- Same as the Driver Core -->
 <!-- BU/30days * Mcore/batch / P_eff = 74.865/(30) * 17497./4. / (1000*0.9) -->
-        <cycle_time>12</cycle_time>
+        <cycle_time>13</cycle_time>
         <refuel_time>0</refuel_time>
 <!-- Core_inv / Core_Ass = 3820 / 4. --> 
-        <assem_size>955</assem_size>
+        <assem_size>931.1</assem_size>
         <n_assem_core>4</n_assem_core>
         <n_assem_batch>1</n_assem_batch>
 <!-- ******************************** --> 
@@ -152,10 +151,10 @@
 
 <!-- Same as the Driver Core -->
 <!-- BU/30days * Mcore/batch / P_eff = 74.865/(30) * 17497./4. / (1000*0.9) -->
-        <cycle_time>12</cycle_time>
+        <cycle_time>13</cycle_time>
         <refuel_time>0</refuel_time>
 <!-- Core_inv / Core_Ass = 5282/8. --> 
-        <assem_size>660.250</assem_size>
+        <assem_size>643.74</assem_size>
         <n_assem_core>8</n_assem_core>
         <n_assem_batch>1</n_assem_batch>
 <!-- ******************************** --> 
@@ -270,10 +269,6 @@
           </Separations>
       </config>
   </prototype>
-  <!-- *********************** -->
-
-  <!--      FBR blanket E2 storage     -->
-
 
   <prototype>
       <name>Storage_E1</name>
@@ -287,8 +282,6 @@
           </Storage>
       </config>
   </prototype>
-  <!-- *********************** -->
-
 
   <prototype>
       <name>Storage_E2</name>
