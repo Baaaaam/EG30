@@ -44,10 +44,10 @@
         <name>J1_TRU_alt_src</name>
         <config>
             <Source>
-                <outcommod>J1_TRU_alt</outcommod>
+                <outcommod>J1_TRU</outcommod>
                 <outrecipe>J1_TRU</outrecipe>
 
-                <inventory_size>1e100</inventory_size>
+                <inventory_size>10000000</inventory_size>
                 <throughput>1e100</throughput>
             </Source>
         </config>
@@ -57,9 +57,9 @@
         <name>E1_alt_src</name>
         <config>
             <Source>
-                <outcommod>E1_alt</outcommod>
+                <outcommod>E1</outcommod>
                 <outrecipe>E1</outrecipe>
-                <inventory_size>1e100</inventory_size>
+                <inventory_size>10000000</inventory_size>
                 <throughput>1e100</throughput>
             </Source>
         </config>
@@ -69,10 +69,10 @@
         <name>E2_alt_src</name>
         <config>
             <Source>
-                <outcommod>E2_alt</outcommod>
+                <outcommod>E2</outcommod>
                 <outrecipe>E2</outrecipe>
 
-                <inventory_size>1e100</inventory_size>
+                <inventory_size>10000000</inventory_size>
                 <throughput>1e100</throughput>
             </Source>
         </config>
@@ -89,6 +89,7 @@
             </Sink>
         </config>
     </prototype>
+
 
     <prototype>
         <name>deployer_main_CHAIN</name>
@@ -169,12 +170,12 @@
 
                     <val>1</val>
                     <val>1</val>
-                    <val>17</val>
+                    <val>18</val>
 
                     <val>1</val>
                     <val>1</val>
 
-                    <val>35</val>
+                    <val>36</val>
 
                     <val>1</val>
                     <val>1</val>
