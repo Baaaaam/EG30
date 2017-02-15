@@ -55,31 +55,26 @@
   <prototype>
     <name>FBR_driver</name>
     <config>
-      <Reactor>
+      <FleetReactor>
         <fuel_inrecipes>  <val>FBR_MOX_N</val></fuel_inrecipes>
         <fuel_incommods>  <val>FBR_MOX_N</val></fuel_incommods>
 
         <fuel_outrecipes> <val>FBR_MOX_S</val></fuel_outrecipes>
         <fuel_outcommods> <val>FBR_driver_MOX_spent</val></fuel_outcommods>
 
-<!-- BU/30days * Mcore/batch / P_eff = 74.865/(30) * 17497./4. / (1000*0.9) -->
         <cycle_time>12</cycle_time>
-        <refuel_time>0</refuel_time>
-<!-- Core_inv / Core_Ass = 17497 / 4. --> 
-        <assem_size>4374.25</assem_size>
-        <n_assem_core>4</n_assem_core>
-        <n_assem_batch>1</n_assem_batch>
-<!-- P_th * Ef_th * Cap_fac = 1000*40.0%*0.9 --> 
+        <batch_size>4374</batch_size>
+        <core_size>17497</core_size>
         <power_cap>360</power_cap>
 
-      </Reactor>
+      </FleetReactor>
     </config>
   </prototype>
 
   <prototype>
     <name>FBR_in_blanket</name>
     <config>
-      <Reactor>
+      <FleetReactor>
         <fuel_inrecipes>
           <val>nu</val>
           <val>nu</val>
@@ -107,22 +102,20 @@
 <!-- Same as the Driver Core -->
 <!-- BU/30days * Mcore/batch / P_eff = 74.865/(30) * 17497./4. / (1000*0.9) -->
         <cycle_time>12</cycle_time>
-        <refuel_time>0</refuel_time>
 <!-- Core_inv / Core_Ass = 3820 / 4. --> 
-        <assem_size>955</assem_size>
-        <n_assem_core>4</n_assem_core>
-        <n_assem_batch>1</n_assem_batch>
+        <batch_size>955</batch_size>
+        <core_size>3820</core_size>
 <!-- ******************************** --> 
         <power_cap>0.1</power_cap>
 
-      </Reactor>
+      </FleetReactor>
     </config>
   </prototype>
 
   <prototype>
     <name>FBR_out_blanket</name>
     <config>
-      <Reactor>
+      <FleetReactor>
         <fuel_inrecipes>
           <val>nu</val>
           <val>nu</val>
@@ -150,15 +143,13 @@
 <!-- Same as the Driver Core -->
 <!-- BU/30days * Mcore/batch / P_eff = 74.865/(30) * 17497./4. / (1000*0.9) -->
         <cycle_time>12</cycle_time>
-        <refuel_time>0</refuel_time>
 <!-- Core_inv / Core_Ass = 5282/8. --> 
-        <assem_size>660.250</assem_size>
-        <n_assem_core>8</n_assem_core>
-        <n_assem_batch>1</n_assem_batch>
+        <batch_size>660</batch_size>
+        <core_size>5282</core_size>
 <!-- ******************************** --> 
         <power_cap>0.1</power_cap>
 
-      </Reactor>
+      </FleetReactor>
     </config>
   </prototype>
 

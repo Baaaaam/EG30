@@ -59,23 +59,18 @@
   <prototype>
     <name>PWR</name>
     <config>
-      <Reactor>
+      <FleetReactor>
         <fuel_inrecipes>  <val>PWR_MOX_N</val></fuel_inrecipes>
         <fuel_incommods>  <val>PWR_MOX_new</val></fuel_incommods>
 
         <fuel_outrecipes> <val>PWR_MOX_S</val></fuel_outrecipes>
         <fuel_outcommods> <val>PWR_MOX_spent</val></fuel_outcommods>
-<!-- BU/30days *Mcore/batch / P_eff = 50./(30)*88758./3./(3000*0.9) -->
         <cycle_time>18</cycle_time>
-        <refuel_time>0</refuel_time>
-<!-- Core_inv / Core_Ass = 88758 / 3. --> 
-        <assem_size>29586.0</assem_size>
-        <n_assem_core>3</n_assem_core>
-        <n_assem_batch>1</n_assem_batch>
-<!-- P_th * Ef_th * Cap_fac = 3000*33.333%*0.9 --> 
+        <batch_size>29586</batch_size>
+        <core_size>88758</core_size>
         <power_cap>900</power_cap> 
 
-      </Reactor>
+      </FleetReactor>
     </config>
   </prototype>
 <!-- *********************** -->

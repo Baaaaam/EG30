@@ -19,6 +19,7 @@
     <spec> <lib>cycamore</lib> <name>FuelFab</name> </spec>
     <spec> <lib>cycamore</lib> <name>Separations</name> </spec>
     <spec> <lib>cycamore</lib> <name>Mixer</name> </spec>
+    <spec> <lib>rwc</lib> <name>FleetReactor</name> </spec>
   </archetypes>
 
 
