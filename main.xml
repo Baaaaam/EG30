@@ -132,21 +132,12 @@
           <val>PWR</val>
 
 
-          <val>FBR_driver_MOX_cooling</val>
-          <val>FBR_driver_MOX_storage</val>
-          <val>FBR_driver_separation</val>
+          <val>FBR_cooling</val>
+          <val>FBR_separation</val>
 
-          <val>FBR_driver_fabrication</val>
+          <val>FBR_fabrication</val>
 
-          <val>FBR_driver</val>
-
-          <val>FBR_blanket_cooling</val>
-          <val>FBR_blanket_storage</val>
-          <val>FBR_blanket_separation</val>
-
-
-          <val>FBR_in_blanket</val>
-          <val>FBR_out_blanket</val>
+          <val>FBR</val>
 
         </prototypes>
 
@@ -176,19 +167,11 @@
 
           <val>1</val>
           <val>1</val>
-          <val>1</val>
 
           <val>1</val>
 
           <val>1</val>
 
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-
-
-          <val>1</val>
-          <val>1</val>
         </build_times>
 
         <n_build>
@@ -217,19 +200,11 @@
 
           <val>1</val>
           <val>1</val>
-          <val>1</val>
 
           <val>35</val>
 
           <val>208</val>
 
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-
-
-          <val>208</val>
-          <val>208</val>
         </n_build>
       </DeployInst>
     </config>
