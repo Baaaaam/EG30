@@ -581,7 +581,7 @@
                     <val>FBR_out_blanket</val>
                     <val>FBR_out_blanket</val>
                 </prototypes>
-                
+
                 <build_times>
                     <val>1</val>
                     <val>1</val>
@@ -689,7 +689,7 @@
                     <val>1</val>
                     <val>1</val>
                 </build_times>
-                
+
                 <lifetimes>
                     <val>181</val>
                     <val>193</val>
@@ -965,7 +965,7 @@
                     <val>FBR_plant</val>
                     <val>FBR_plant</val>
                 </prototypes>
-                
+
                 <build_times>
                     <val>181</val>
                     <val>193</val>
@@ -1002,7 +1002,7 @@
                     <val>565</val>
                     <val>577</val>
                     <val>589</val>
-                </build_times> 
+                </build_times>
 
                 <n_build>
                     <val>6</val>
@@ -1087,7 +1087,7 @@
                     <val>FBR_plant</val>
                     <val>FBR_plant</val>
                 </prototypes>
-                
+
                 <build_times>
                     <val>901</val>
                     <val>913</val>
@@ -1124,7 +1124,7 @@
                     <val>1285</val>
                     <val>1297</val>
                     <val>1309</val>
-                </build_times> 
+                </build_times>
 
                 <n_build>
                     <val>6</val>
@@ -1209,7 +1209,7 @@
                     <val>FBR_plant</val>
                     <val>FBR_plant</val>
                 </prototypes>
-                
+
                 <build_times>
                     <val>1621</val>
                     <val>1633</val>
@@ -1246,7 +1246,7 @@
                     <val>2005</val>
                     <val>2017</val>
                     <val>2029</val>
-                </build_times> 
+                </build_times>
 
                 <n_build>
                     <val>6</val>
