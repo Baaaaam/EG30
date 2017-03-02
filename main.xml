@@ -2,7 +2,8 @@
 
     <schematype>flat</schematype>
     <control>
-        <duration>1800</duration>
+        <!--<duration>1800</duration>-->
+        <duration>300</duration>
         <startmonth>1</startmonth>
         <startyear>2015</startyear>
         <decay>never</decay>
@@ -28,10 +29,10 @@
     <xi:include href="LWR-cycle.xml" xpointer="xpointer(//My_include/*)"/>
 
     <prototype>
-        <name>NU_src</name>
+        <name>nu_src</name>
         <config>
             <Source>
-                <outcommod>NU</outcommod>
+                <outcommod>nu</outcommod>
                 <outrecipe>nu</outrecipe>
 
                 <inventory_size>1e100</inventory_size>
@@ -41,43 +42,16 @@
     </prototype>
 
     <prototype>
-        <name>J1_TRU_alt_src</name>
+        <name>leu_src</name>
         <config>
             <Source>
-                <outcommod>J1_TRU</outcommod>
-                <outrecipe>J1_TRU</outrecipe>
-
-                <inventory_size>10000000</inventory_size>
+                <outcommod>FBR_LEU_N</outcommod>
+                <outrecipe>FBR_LEU_N</outrecipe>
+                <inventory_size>1e100</inventory_size>
                 <throughput>1e100</throughput>
             </Source>
         </config>
     </prototype>
-
-    <prototype>
-        <name>E1_alt_src</name>
-        <config>
-            <Source>
-                <outcommod>E1</outcommod>
-                <outrecipe>E1</outrecipe>
-                <inventory_size>10000000</inventory_size>
-                <throughput>1e100</throughput>
-            </Source>
-        </config>
-    </prototype>
-
-    <prototype>
-        <name>E2_alt_src</name>
-        <config>
-            <Source>
-                <outcommod>E2</outcommod>
-                <outrecipe>E2</outrecipe>
-
-                <inventory_size>10000000</inventory_size>
-                <throughput>1e100</throughput>
-            </Source>
-        </config>
-    </prototype>
-
 
 
     <prototype>
@@ -98,17 +72,15 @@
                 <prototypes>
                     <val>waste</val>
 
-                    <val>NU_src</val>
+                    <val>nu_src</val>
 
-                    <val>J1_TRU_alt_src</val>
-                    <val>E1_alt_src</val>
-                    <val>E2_alt_src</val>
+                    <val>leu_src</val>
 
 
-                    <val>Storage_J1_TRU</val>
-                    <val>Storage_J1_U</val>
-                    <val>Storage_E1</val>
-                    <val>Storage_E2</val>
+                    <val>Storage_pwr_tru</val>
+                    <val>Storage_pwr_u</val>
+                    <val>Storage_blk_tru</val>
+                    <val>Storage_drv_tru</val>
 
 
                     <val>PWR_cooling</val>
@@ -130,8 +102,6 @@
 
                     <val>1</val>
 
-                    <val>1</val>
-                    <val>1</val>
                     <val>1</val>
 
                     <val>1</val>
@@ -159,8 +129,6 @@
 
                     <val>1</val>
 
-                    <val>1</val>
-                    <val>1</val>
                     <val>1</val>
 
                     <val>1</val>

@@ -1,6 +1,5 @@
 <My_include>
   
-  <!-- Naturel Uranium recipe -->
   <recipe>
     <name>nu</name>
     <basis>mass</basis>
@@ -25,11 +24,10 @@
     <nuclide><id>CM246</id>  <comp>0.00000E+00</comp> </nuclide>
     <nuclide><id>CS237</id>  <comp>0.00000E+00</comp> </nuclide>
   </recipe>
-  <!-- *********************** -->
   
-  <!-- upu E1 recipe -->
+  
   <recipe>
-    <name>E1</name>
+    <name>drv_tru</name>
     <basis>mass</basis>
     <nuclide><id>U234</id>   <comp>0.00000E+00</comp> </nuclide>
     <nuclide><id>U235</id>   <comp>5.78379E-02</comp> </nuclide>
@@ -52,11 +50,10 @@
     <nuclide><id>CM246</id>  <comp>3.65445E-03</comp> </nuclide>
     <nuclide><id>CS237</id>  <comp>0.00000E+00</comp> </nuclide>
   </recipe>
-  <!-- *********************** -->
-
-  <!-- upu E2 recipe -->
+  
+  
   <recipe>
-    <name>E2</name>
+    <name>blk_tru</name>
     <basis>mass</basis>
     <nuclide><id>U234</id>   <comp>0.00000E+00</comp></nuclide>
     <nuclide><id>U235</id>   <comp>6.71834E-03</comp></nuclide>
@@ -81,9 +78,8 @@
   </recipe>
   
   
-  <!-- upu J1 recipe -->
   <recipe>
-    <name>J1_TRU</name>
+    <name>pwr_tru</name>
     <basis>mass</basis>
     <nuclide><id>U234</id>   <comp>0.00000E+00</comp> </nuclide>
     <nuclide><id>U235</id>   <comp>1.38630E-03</comp> </nuclide>
@@ -106,10 +102,8 @@
     <nuclide><id>CM246</id>  <comp>1.15681E-06</comp> </nuclide>
     <nuclide><id>CS237</id>  <comp>0.00000E-00</comp> </nuclide>
   </recipe>
-  <!-- *********************** -->
 
-<!-- ****** PWR MOX recipe ***** -->
-  <!-- Fresh -->
+
   <recipe>
     <name>PWR_MOX_N</name>
     <basis>mass</basis>
@@ -134,8 +128,7 @@
     <nuclide><id>CM246</id>  <comp>2.65666E-10</comp> </nuclide>
     <nuclide><id>CS237</id>  <comp>0.00000E+00</comp> </nuclide>
   </recipe>
-  <!-- *********************** -->
-  <!-- Spent -->
+  
   <recipe>
     <name>PWR_MOX_S</name>
     <basis>mass</basis>
@@ -160,11 +153,8 @@
     <nuclide><id>CM246</id>  <comp>2.37757E-05</comp> </nuclide>
     <nuclide><id>CS237</id>  <comp>1.09980E+00</comp> </nuclide>
   </recipe>
-  <!-- *********************** -->
-<!-- *********************** -->
-  
-  <!-- ****** FBR MOX recipe ***** -->
-  <!-- Fresh -->
+
+
   <recipe>
     <name>FBR_MOX_N</name>
     <basis>mass</basis>
@@ -189,7 +179,7 @@
     <nuclide><id>CM246</id>  <comp>3.65928E-03</comp> </nuclide>
     <nuclide><id>CS237</id>  <comp>0.00000E+00</comp> </nuclide>
   </recipe>                         
-  <!-- Spent -->
+
   <recipe>
     <name>FBR_MOX_S</name>
     <basis>mass</basis>
@@ -214,10 +204,58 @@
     <nuclide><id>CM246</id>  <comp>3.65445E-03</comp> </nuclide>
     <nuclide><id>CS237</id>  <comp>8.12348E-01</comp> </nuclide>
   </recipe>
-  <!-- *********************** -->
-  <!-- *********************** -->
   
-  <!-- *** FBR blanket recipe **** -->
+  <recipe>
+    <name>FBR_LEU_N</name>
+    <basis>mass</basis>
+    <nuclide><id>U234</id>   <comp>0.00000E+00</comp> </nuclide>
+    <nuclide><id>U235</id>   <comp>6.35972E-02</comp> </nuclide>
+    <nuclide><id>U236</id>   <comp>0.00000E+00</comp> </nuclide>
+    <nuclide><id>U238</id>   <comp>8.88116E+00</comp> </nuclide>
+    <nuclide><id>NP237</id>  <comp>1.72618E-02</comp> </nuclide>
+    <nuclide><id>PU236</id>  <comp>5.46201E-08</comp> </nuclide>
+    <nuclide><id>PU238</id>  <comp>4.77198E-02</comp> </nuclide>
+    <nuclide><id>PU239</id>  <comp>1.02962E+00</comp> </nuclide>
+    <nuclide><id>PU240</id>  <comp>5.94983E-01</comp> </nuclide>
+    <nuclide><id>PU241</id>  <comp>6.36756E-02</comp> </nuclide>
+    <nuclide><id>PU242</id>  <comp>9.74956E-02</comp> </nuclide>
+    <nuclide><id>AM241</id>  <comp>8.69663E-02</comp> </nuclide>
+    <nuclide><id>AM242M</id> <comp>5.97661E-03</comp> </nuclide>
+    <nuclide><id>AM243</id>  <comp>2.79655E-02</comp> </nuclide>
+    <nuclide><id>CM242</id>  <comp>1.45324E-05</comp> </nuclide>
+    <nuclide><id>CM243</id>  <comp>1.62493E-04</comp> </nuclide>
+    <nuclide><id>CM244</id>  <comp>1.23797E-02</comp> </nuclide>
+    <nuclide><id>CM245</id>  <comp>2.90603E-03</comp> </nuclide>
+    <nuclide><id>CM246</id>  <comp>3.65928E-03</comp> </nuclide>
+    <nuclide><id>CS237</id>  <comp>0.00000E+00</comp> </nuclide>
+  </recipe>                         
+  
+  <recipe>
+    <name>FBR_LEU_S</name>
+    <basis>mass</basis>
+    <nuclide><id>U234</id>   <comp>0.00000E+00</comp> </nuclide>
+    <nuclide><id>U235</id>   <comp>5.78379E-02</comp> </nuclide>
+    <nuclide><id>U236</id>   <comp>0.00000E+00</comp> </nuclide>
+    <nuclide><id>U238</id>   <comp>8.07689E+00</comp> </nuclide>
+    <nuclide><id>NP237</id>  <comp>1.63167E-02</comp> </nuclide>
+    <nuclide><id>PU236</id>  <comp>5.46200E-08</comp> </nuclide>
+    <nuclide><id>PU238</id>  <comp>4.61022E-02</comp> </nuclide>
+    <nuclide><id>PU239</id>  <comp>9.66596E-01</comp> </nuclide>
+    <nuclide><id>PU240</id>  <comp>5.55147E-01</comp> </nuclide>
+    <nuclide><id>PU241</id>  <comp>4.73893E-02</comp> </nuclide>
+    <nuclide><id>PU242</id>  <comp>9.02096E-02</comp> </nuclide>
+    <nuclide><id>AM241</id>  <comp>7.91665E-02</comp> </nuclide>
+    <nuclide><id>AM242M</id> <comp>5.97661E-03</comp> </nuclide>
+    <nuclide><id>AM243</id>  <comp>2.63298E-02</comp> </nuclide>
+    <nuclide><id>CM242</id>  <comp>1.44734E-05</comp> </nuclide>
+    <nuclide><id>CM243</id>  <comp>1.53347E-04</comp> </nuclide>
+    <nuclide><id>CM244</id>  <comp>1.18389E-02</comp> </nuclide>
+    <nuclide><id>CM245</id>  <comp>2.84606E-03</comp> </nuclide>
+    <nuclide><id>CM246</id>  <comp>3.65445E-03</comp> </nuclide>
+    <nuclide><id>CS237</id>  <comp>8.12348E-01</comp> </nuclide>
+  </recipe>
+
+
   <recipe>
     <name>FBR_BLT_N</name>
     <basis>mass</basis>
@@ -242,8 +280,7 @@
     <nuclide><id>CM246</id>  <comp>0.00000E+00</comp> </nuclide>
     <nuclide><id>CS237</id>  <comp>0.00000E+00</comp> </nuclide>
   </recipe>
-  <!-- *********************** -->
-  <!-- Spent -->
+
   <recipe>
     <name>FBR_BLT_IN_S</name>
     <basis>mass</basis>
@@ -268,8 +305,8 @@
     <nuclide><id>CM246</id>  <comp>1.26672E-08</comp> </nuclide>
     <nuclide><id>CS237</id>  <comp>2.44267E+01</comp> </nuclide>
   </recipe>
-  <!-- *********************** -->
-  <!-- Spent -->
+  
+  
   <recipe>
     <name>FBR_BLT_OUT_S</name>
     <basis>mass</basis>

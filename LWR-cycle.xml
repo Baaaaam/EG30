@@ -11,12 +11,8 @@
                         </info>
                         <commodities>
                             <item>
-                                <commodity>E2_str</commodity>
+                                <commodity>blk_tru_str</commodity>
                                 <pref>100</pref>
-                            </item>
-                            <item>
-                                <commodity>E2_alt</commodity>
-                                <pref>1</pref>
                             </item>
                         </commodities>
                     </stream>
@@ -27,7 +23,7 @@
                         </info>
                         <commodities>
                             <item>
-                                <commodity>NU</commodity>
+                                <commodity>nu</commodity>
                                 <pref>1</pref>
                             </item>
                         </commodities>
@@ -94,7 +90,7 @@
 
                 <streams>
                     <item>
-                        <commod>J1_TRU</commod>
+                        <commod>pwr_tru</commod>
                         <info>
                             <buf_size>1e100</buf_size>
                             <efficiencies>
@@ -107,7 +103,7 @@
                         </info>
                     </item>
                     <item>
-                        <commod>J1_U</commod>
+                        <commod>pwr_u</commod>
                         <info>
                             <buf_size>1e100</buf_size>
                             <efficiencies>
@@ -124,14 +120,14 @@
 
 
     <prototype>
-        <name>Storage_J1_TRU</name>
+        <name>Storage_pwr_tru</name>
         <config>
             <Storage>
                 <in_commods>
-                    <val>J1_TRU</val>
+                    <val>pwr_tru</val>
                 </in_commods>
                 <out_commods>
-                    <val>J1_TRU_str</val>
+                    <val>pwr_tru_str</val>
                 </out_commods>
                 <residence_time>0</residence_time>
             </Storage>
@@ -141,14 +137,14 @@
 
 
     <prototype>
-        <name>Storage_J1_U</name>
+        <name>Storage_pwr_u</name>
         <config>
             <Storage>
                 <in_commods>
-                    <val>J1_U</val>
+                    <val>pwr_u</val>
                 </in_commods>
                 <out_commods>
-                    <val>J1_U_str</val>
+                    <val>pwr_u_str</val>
                 </out_commods>
                 <residence_time>0</residence_time>
             </Storage>
