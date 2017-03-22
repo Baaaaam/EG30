@@ -1,0 +1,514 @@
+<My_include>
+
+
+    <prototype>
+        <name>COOL_0</name>
+        <config>
+            <Storage>
+                <in_commods> <val>FBR_LEU_S</val></in_commods>
+                <out_commods> <val>FBR_LEU_S_C</val></out_commods>
+                <residence_time>81</residence_time>
+            </Storage>
+        </config>
+    </prototype>
+
+    <prototype>
+        <name>SEP_0</name>
+        <config>
+            <Separations>
+                <feedbuf_size>1e100</feedbuf_size>
+
+                <feed_commods>
+                    <val>FBR_LEU_S_C</val>
+                </feed_commods>
+
+                <feed_commod_prefs>
+                    <val>1.0</val>
+                </feed_commod_prefs>
+
+                <throughput>1e100</throughput>
+
+                <streams>
+                    <item>
+                        <commod>FBR_TRU_0</commod>
+                        <info>
+                            <buf_size>1e100</buf_size>
+                            <efficiencies>
+                                <item> <comp>Pu</comp> <eff>9.88e-01</eff> </item>
+                                <item> <comp>U</comp>  <eff>9.88e-01</eff> </item>
+                                <item> <comp>Np</comp> <eff>9.88e-01</eff> </item>
+                                <item> <comp>Am</comp> <eff>9.88e-01</eff> </item>
+                                <item> <comp>Cm</comp> <eff>9.88e-01</eff> </item>
+                            </efficiencies>
+                        </info>
+                    </item>
+
+                </streams>
+
+                <leftover_commod>waste</leftover_commod>
+
+            </Separations>
+        </config>
+    </prototype>
+
+    <prototype>
+        <name>FAB_1</name>
+        <config>
+            <Mixer>
+                <constrain_request>1</constrain_request>
+                <in_streams>
+                    <stream>
+                        <info>
+                            <mixing_ratio>0.913212</mixing_ratio>
+                            <buf_size>4000</buf_size>
+                        </info>
+                        <commodities>
+                            <item>
+                                <commodity>FBR_TRU_0</commodity>
+                                <pref>100</pref>
+                            </item>
+                        </commodities>
+                    </stream>
+                    <stream>
+                        <info>
+                            <mixing_ratio>8.67881E-02</mixing_ratio>
+                            <buf_size>380</buf_size>
+                        </info>
+                        <commodities>
+                            <item>
+                                <commodity>pwr_tru_str</commodity>
+                                <pref>100</pref>
+                            </item>
+                            <item>
+                                <commodity>blk_tru_str</commodity>
+                                <pref>10</pref>
+                            </item>
+                        </commodities>
+                    </stream>
+                </in_streams>
+                <throughput>4375</throughput>
+                <out_commod>FBR_MOX_N_1</out_commod>
+                <out_buf_size>4375</out_buf_size>
+            </Mixer>
+        </config>
+    </prototype>
+
+    <prototype>
+        <name>COOL_1</name>
+        <config>
+            <Storage>
+                <in_commods> <val>FBR_MOX_S_1</val></in_commods>
+                <out_commods> <val>FBR_MOX_S_1_C</val></out_commods>
+                <residence_time>81</residence_time>
+            </Storage>
+        </config>
+    </prototype>
+
+    <prototype>
+        <name>SEP_1</name>
+        <config>
+            <Separations>
+                <feedbuf_size>1e100</feedbuf_size>
+
+                <feed_commods>
+                    <val>FBR_MOX_S_1_C</val>
+                </feed_commods>
+
+                <feed_commod_prefs>
+                    <val>1.0</val>
+                </feed_commod_prefs>
+
+                <throughput>1e100</throughput>
+
+                <streams>
+                    <item>
+                        <commod>FBR_TRU_1</commod>
+                        <info>
+                            <buf_size>1e100</buf_size>
+                            <efficiencies>
+                                <item> <comp>Pu</comp> <eff>9.88e-01</eff> </item>
+                                <item> <comp>U</comp>  <eff>9.88e-01</eff> </item>
+                                <item> <comp>Np</comp> <eff>9.88e-01</eff> </item>
+                                <item> <comp>Am</comp> <eff>9.88e-01</eff> </item>
+                                <item> <comp>Cm</comp> <eff>9.88e-01</eff> </item>
+                            </efficiencies>
+                        </info>
+                    </item>
+
+                </streams>
+
+                <leftover_commod>waste</leftover_commod>
+
+            </Separations>
+        </config>
+    </prototype>
+
+    <prototype>
+        <name>FAB_2</name>
+        <config>
+            <Mixer>
+                <constrain_request>1</constrain_request>
+                <in_streams>
+                    <stream>
+                        <info>
+                            <mixing_ratio>0.913212</mixing_ratio>
+                            <buf_size>4000</buf_size>
+                        </info>
+                        <commodities>
+                            <item>
+                                <commodity>FBR_TRU_1</commodity>
+                                <pref>100</pref>
+                            </item>
+                        </commodities>
+                    </stream>
+                    <stream>
+                        <info>
+                            <mixing_ratio>8.67881E-02</mixing_ratio>
+                            <buf_size>380</buf_size>
+                        </info>
+                        <commodities>
+                            <item>
+                                <commodity>pwr_tru_str</commodity>
+                                <pref>100</pref>
+                            </item>
+                            <item>
+                                <commodity>blk_tru_str</commodity>
+                                <pref>10</pref>
+                            </item>
+                        </commodities>
+                    </stream>
+                </in_streams>
+                <throughput>4375</throughput>
+                <out_commod>FBR_MOX_N_2</out_commod>
+                <out_buf_size>4375</out_buf_size>
+            </Mixer>
+        </config>
+    </prototype>
+
+    <prototype>
+        <name>COOL_2</name>
+        <config>
+            <Storage>
+                <in_commods> <val>FBR_MOX_S_2</val></in_commods>
+                <out_commods> <val>FBR_MOX_S_2_C</val></out_commods>
+                <residence_time>81</residence_time>
+            </Storage>
+        </config>
+    </prototype>
+
+    <prototype>
+        <name>SEP_2</name>
+        <config>
+            <Separations>
+                <feedbuf_size>1e100</feedbuf_size>
+
+                <feed_commods>
+                    <val>FBR_MOX_S_2_C</val>
+                </feed_commods>
+
+                <feed_commod_prefs>
+                    <val>1.0</val>
+                </feed_commod_prefs>
+
+                <throughput>1e100</throughput>
+
+                <streams>
+                    <item>
+                        <commod>FBR_TRU_2</commod>
+                        <info>
+                            <buf_size>1e100</buf_size>
+                            <efficiencies>
+                                <item> <comp>Pu</comp> <eff>9.88e-01</eff> </item>
+                                <item> <comp>U</comp>  <eff>9.88e-01</eff> </item>
+                                <item> <comp>Np</comp> <eff>9.88e-01</eff> </item>
+                                <item> <comp>Am</comp> <eff>9.88e-01</eff> </item>
+                                <item> <comp>Cm</comp> <eff>9.88e-01</eff> </item>
+                            </efficiencies>
+                        </info>
+                    </item>
+
+                </streams>
+
+                <leftover_commod>waste</leftover_commod>
+
+            </Separations>
+        </config>
+    </prototype>
+
+    <prototype>
+        <name>FAB_3</name>
+        <config>
+            <Mixer>
+                <constrain_request>1</constrain_request>
+                <in_streams>
+                    <stream>
+                        <info>
+                            <mixing_ratio>0.913212</mixing_ratio>
+                            <buf_size>4000</buf_size>
+                        </info>
+                        <commodities>
+                            <item>
+                                <commodity>FBR_TRU_2</commodity>
+                                <pref>100</pref>
+                            </item>
+                        </commodities>
+                    </stream>
+                    <stream>
+                        <info>
+                            <mixing_ratio>8.67881E-02</mixing_ratio>
+                            <buf_size>380</buf_size>
+                        </info>
+                        <commodities>
+                            <item>
+                                <commodity>pwr_tru_str</commodity>
+                                <pref>100</pref>
+                            </item>
+                            <item>
+                                <commodity>blk_tru_str</commodity>
+                                <pref>10</pref>
+                            </item>
+                        </commodities>
+                    </stream>
+                </in_streams>
+                <throughput>4375</throughput>
+                <out_commod>FBR_MOX_N_3</out_commod>
+                <out_buf_size>4375</out_buf_size>
+            </Mixer>
+        </config>
+    </prototype>
+
+    <prototype>
+        <name>COOL_3</name>
+        <config>
+            <Storage>
+                <in_commods> <val>FBR_MOX_S_3</val></in_commods>
+                <out_commods> <val>FBR_MOX_S_3_C</val></out_commods>
+                <residence_time>81</residence_time>
+            </Storage>
+        </config>
+    </prototype>
+
+    <prototype>
+        <name>SEP_3</name>
+        <config>
+            <Separations>
+                <feedbuf_size>1e100</feedbuf_size>
+
+                <feed_commods>
+                    <val>FBR_MOX_S_3_C</val>
+                </feed_commods>
+
+                <feed_commod_prefs>
+                    <val>1.0</val>
+                </feed_commod_prefs>
+
+                <throughput>1e100</throughput>
+
+                <streams>
+                    <item>
+                        <commod>FBR_TRU_3</commod>
+                        <info>
+                            <buf_size>1e100</buf_size>
+                            <efficiencies>
+                                <item> <comp>Pu</comp> <eff>9.88e-01</eff> </item>
+                                <item> <comp>U</comp>  <eff>9.88e-01</eff> </item>
+                                <item> <comp>Np</comp> <eff>9.88e-01</eff> </item>
+                                <item> <comp>Am</comp> <eff>9.88e-01</eff> </item>
+                                <item> <comp>Cm</comp> <eff>9.88e-01</eff> </item>
+                            </efficiencies>
+                        </info>
+                    </item>
+
+                </streams>
+
+                <leftover_commod>waste</leftover_commod>
+
+            </Separations>
+        </config>
+    </prototype>
+
+    <prototype>
+        <name>FAB_4</name>
+        <config>
+            <Mixer>
+                <constrain_request>1</constrain_request>
+                <in_streams>
+                    <stream>
+                        <info>
+                            <mixing_ratio>0.913212</mixing_ratio>
+                            <buf_size>4000</buf_size>
+                        </info>
+                        <commodities>
+                            <item>
+                                <commodity>FBR_TRU_3</commodity>
+                                <pref>100</pref>
+                            </item>
+                        </commodities>
+                    </stream>
+                    <stream>
+                        <info>
+                            <mixing_ratio>8.67881E-02</mixing_ratio>
+                            <buf_size>380</buf_size>
+                        </info>
+                        <commodities>
+                            <item>
+                                <commodity>pwr_tru_str</commodity>
+                                <pref>100</pref>
+                            </item>
+                            <item>
+                                <commodity>blk_tru_str</commodity>
+                                <pref>10</pref>
+                            </item>
+                        </commodities>
+                    </stream>
+                </in_streams>
+                <throughput>4375</throughput>
+                <out_commod>FBR_MOX_N_4</out_commod>
+                <out_buf_size>4375</out_buf_size>
+            </Mixer>
+        </config>
+    </prototype>
+
+    <prototype>
+        <name>COOL_4</name>
+        <config>
+            <Storage>
+                <in_commods> <val>FBR_MOX_S_4</val></in_commods>
+                <out_commods> <val>FBR_MOX_S_4_C</val></out_commods>
+                <residence_time>81</residence_time>
+            </Storage>
+        </config>
+    </prototype>
+
+    <prototype>
+        <name>SEP_4</name>
+        <config>
+            <Separations>
+                <feedbuf_size>1e100</feedbuf_size>
+
+                <feed_commods>
+                    <val>FBR_MOX_S_4_C</val>
+                </feed_commods>
+
+                <feed_commod_prefs>
+                    <val>1.0</val>
+                </feed_commod_prefs>
+
+                <throughput>1e100</throughput>
+
+                <streams>
+                    <item>
+                        <commod>FBR_TRU</commod>
+                        <info>
+                            <buf_size>1e100</buf_size>
+                            <efficiencies>
+                                <item> <comp>Pu</comp> <eff>9.88e-01</eff> </item>
+                                <item> <comp>U</comp>  <eff>9.88e-01</eff> </item>
+                                <item> <comp>Np</comp> <eff>9.88e-01</eff> </item>
+                                <item> <comp>Am</comp> <eff>9.88e-01</eff> </item>
+                                <item> <comp>Cm</comp> <eff>9.88e-01</eff> </item>
+                            </efficiencies>
+                        </info>
+                    </item>
+
+                </streams>
+
+                <leftover_commod>waste</leftover_commod>
+
+            </Separations>
+        </config>
+    </prototype>
+
+    <prototype>
+        <name>FAB</name>
+        <config>
+            <Mixer>
+                <constrain_request>1</constrain_request>
+                <in_streams>
+                    <stream>
+                        <info>
+                            <mixing_ratio>0.913212</mixing_ratio>
+                            <buf_size>4000</buf_size>
+                        </info>
+                        <commodities>
+                            <item>
+                                <commodity>FBR_TRU</commodity>
+                                <pref>100</pref>
+                            </item>
+                        </commodities>
+                    </stream>
+                    <stream>
+                        <info>
+                            <mixing_ratio>8.67881E-02</mixing_ratio>
+                            <buf_size>380</buf_size>
+                        </info>
+                        <commodities>
+                            <item>
+                                <commodity>pwr_tru_str</commodity>
+                                <pref>100</pref>
+                            </item>
+                            <item>
+                                <commodity>blk_tru_str</commodity>
+                                <pref>10</pref>
+                            </item>
+                        </commodities>
+                    </stream>
+                </in_streams>
+                <throughput>4375</throughput>
+                <out_commod>FBR_MOX_N</out_commod>
+                <out_buf_size>4375</out_buf_size>
+            </Mixer>
+        </config>
+    </prototype>
+
+    <prototype>
+        <name>COOL</name>
+        <config>
+            <Storage>
+                <in_commods> <val>FBR_MOX_S</val></in_commods>
+                <out_commods> <val>FBR_MOX_S_C</val></out_commods>
+                <residence_time>81</residence_time>
+            </Storage>
+        </config>
+    </prototype>
+
+    <prototype>
+        <name>SEP</name>
+        <config>
+            <Separations>
+                <feedbuf_size>1e100</feedbuf_size>
+
+                <feed_commods>
+                    <val>FBR_MOX_S_C</val>
+                </feed_commods>
+
+                <feed_commod_prefs>
+                    <val>1.0</val>
+                </feed_commod_prefs>
+
+                <throughput>1e100</throughput>
+
+                <streams>
+                    <item>
+                        <commod>FBR_TRU</commod>
+                        <info>
+                            <buf_size>1e100</buf_size>
+                            <efficiencies>
+                                <item> <comp>Pu</comp> <eff>9.88e-01</eff> </item>
+                                <item> <comp>U</comp>  <eff>9.88e-01</eff> </item>
+                                <item> <comp>Np</comp> <eff>9.88e-01</eff> </item>
+                                <item> <comp>Am</comp> <eff>9.88e-01</eff> </item>
+                                <item> <comp>Cm</comp> <eff>9.88e-01</eff> </item>
+                            </efficiencies>
+                        </info>
+                    </item>
+
+                </streams>
+
+                <leftover_commod>waste</leftover_commod>
+
+            </Separations>
+        </config>
+    </prototype>
+
+</My_include>
