@@ -3,7 +3,7 @@
     <schematype>flat</schematype>
     <control>
         <!--<duration>1800</duration>-->
-        <duration>300</duration>
+        <duration>1600</duration>
         <startmonth>1</startmonth>
         <startyear>2015</startyear>
         <decay>never</decay>
@@ -26,6 +26,7 @@
 
     <xi:include href="recipe.xml" xpointer="xpointer(//My_include/*)"/>
     <xi:include href="SFR-cycle.xml" xpointer="xpointer(//My_include/*)"/>
+    <xi:include href="reprocessing_FBR.xml" xpointer="xpointer(//My_include/*)"/>
     <xi:include href="LWR-cycle.xml" xpointer="xpointer(//My_include/*)"/>
 
     <prototype>
@@ -88,10 +89,24 @@
 
                     <val>PWR_fabrication</val>
 
-                    <val>FBR_driver_MOX_cooling</val>
-                    <val>FBR_driver_separation</val>
+                    <val>COOL</val>
+                    <val>COOL_0</val>
+                    <val>COOL_1</val>
+                    <val>COOL_2</val>
+                    <val>COOL_3</val>
+                    <val>COOL_4</val>
+                    <val>SEP</val>
+                    <val>SEP_0</val>
+                    <val>SEP_1</val>
+                    <val>SEP_2</val>
+                    <val>SEP_3</val>
+                    <val>SEP_4</val>
 
-                    <val>FBR_driver_fabrication</val>
+                    <val>FAB</val>
+                    <val>FAB_1</val>
+                    <val>FAB_2</val>
+                    <val>FAB_3</val>
+                    <val>FAB_4</val>
 
                     <val>FBR_blanket_cooling</val>
                     <val>FBR_blanket_separation</val>
@@ -117,7 +132,21 @@
 
                     <val>1</val>
                     <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
 
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
                     <val>1</val>
 
                     <val>1</val>
@@ -142,7 +171,21 @@
 
                     <val>1</val>
                     <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
 
+                    <val>36</val>
+                    <val>36</val>
+                    <val>36</val>
+                    <val>36</val>
                     <val>36</val>
 
                     <val>1</val>
