@@ -3,7 +3,7 @@
     <schematype>flat</schematype>
     <control>
         <!--<duration>1800</duration>-->
-        <duration>1600</duration>
+        <duration>2400</duration>
         <startmonth>1</startmonth>
         <startyear>2015</startyear>
         <decay>never</decay>
