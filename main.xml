@@ -80,6 +80,7 @@
 
                     <val>Storage_pwr_tru</val>
                     <val>Storage_pwr_u</val>
+                    <val>Storage_ru</val>
                     <val>Storage_blk_tru</val>
                     <val>Storage_drv_tru</val>
 
@@ -119,6 +120,7 @@
 
                     <val>1</val>
 
+                    <val>1</val>
                     <val>1</val>
                     <val>1</val>
                     <val>1</val>
@@ -164,6 +166,7 @@
                     <val>1</val>
                     <val>1</val>
                     <val>1</val>
+                    <val>1</val>
 
                     <val>1</val>
                     <val>1</val>
@@ -186,7 +189,7 @@
                     <val>36</val>
                     <val>36</val>
                     <val>36</val>
-                    <val>36</val>
+                    <val>50</val>
 
                     <val>1</val>
                     <val>1</val>

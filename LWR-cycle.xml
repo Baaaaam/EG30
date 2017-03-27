@@ -6,20 +6,20 @@
                 <in_streams>
                     <stream>
                         <info>
-                            <mixing_ratio>0.879677</mixing_ratio> <!-- throughput * mixing_ratio = 29586.0 * 0.879677 -->
-                            <buf_size>6600</buf_size>
+                            <mixing_ratio>0.05</mixing_ratio> <!-- throughput * mixing_ratio = 29586.0 * 0.879677 -->
+                            <buf_size>400</buf_size>
                         </info>
                         <commodities>
                             <item>
                                 <commodity>blk_tru_str</commodity>
-                                <pref>100</pref>
+                                <pref>1</pref>
                             </item>
                         </commodities>
                     </stream>
                     <stream>
                         <info>
-                            <mixing_ratio>0.120323</mixing_ratio> <!-- throughput * mixing_ratio = 29586.0 * 0.120323 -->
-                            <buf_size>910</buf_size>
+                            <mixing_ratio>0.95</mixing_ratio> <!-- throughput * mixing_ratio = 29586.0 * 0.120323 -->
+                            <buf_size>7200</buf_size>
                         </info>
                         <commodities>
                             <item>
@@ -43,11 +43,22 @@
         <lifetime>720</lifetime>
         <config>
             <Reactor>
-                <fuel_inrecipes>  <val>PWR_MOX_N</val></fuel_inrecipes>
-                <fuel_incommods>  <val>PWR_MOX_new</val></fuel_incommods>
+                <fuel_inrecipes>
+                    <val>PWR_MOX_N</val>
+                </fuel_inrecipes>
+                <fuel_incommods>
+                    <val>PWR_MOX_new</val>
+                </fuel_incommods>
+                <fuel_prefs>
+                    <val>10</val>
+                </fuel_prefs>
 
-                <fuel_outrecipes> <val>PWR_MOX_S</val></fuel_outrecipes>
-                <fuel_outcommods> <val>PWR_MOX_spent</val></fuel_outcommods>
+                <fuel_outrecipes> 
+                    <val>PWR_MOX_S</val>
+                </fuel_outrecipes>
+                <fuel_outcommods> 
+                    <val>PWR_MOX_spent</val>
+                </fuel_outcommods>
                 <cycle_time>18</cycle_time> <!-- BU/30days *Mcore/batch / P_eff = 50./(30)*88758./3./(3000*0.9) -->
                 <refuel_time>0</refuel_time>
                 <assem_size>29586.0</assem_size><!-- Core_inv / Core_Ass = 88758 / 3. -->

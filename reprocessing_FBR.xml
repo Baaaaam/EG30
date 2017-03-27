@@ -59,8 +59,8 @@
                 <in_streams>
                     <stream>
                         <info>
-                            <mixing_ratio>0.913212</mixing_ratio>
-                            <buf_size>4000</buf_size>
+                            <mixing_ratio>0.7243</mixing_ratio>
+                            <buf_size>3200</buf_size>
                         </info>
                         <commodities>
                             <item>
@@ -71,17 +71,29 @@
                     </stream>
                     <stream>
                         <info>
-                            <mixing_ratio>8.67881E-02</mixing_ratio>
-                            <buf_size>380</buf_size>
+                            <mixing_ratio>0.0483</mixing_ratio>
+                            <buf_size>220</buf_size>
                         </info>
                         <commodities>
                             <item>
-                                <commodity>pwr_tru_str</commodity>
-                                <pref>100</pref>
-                            </item>
-                            <item>
                                 <commodity>blk_tru_str</commodity>
                                 <pref>10</pref>
+                            </item>
+                        </commodities>
+                    </stream>
+                    <stream>
+                        <info>
+                            <mixing_ratio>0.2275</mixing_ratio>
+                            <buf_size>1000</buf_size>
+                        </info>
+                        <commodities>
+                            <item>
+                                <commodity>ru_str</commodity>
+                                <pref>10</pref>
+                            </item>
+                            <item>
+                                <commodity>nu</commodity>
+                                <pref>0.1</pref>
                             </item>
                         </commodities>
                     </stream>
@@ -151,8 +163,8 @@
                 <in_streams>
                     <stream>
                         <info>
-                            <mixing_ratio>0.913212</mixing_ratio>
-                            <buf_size>4000</buf_size>
+                            <mixing_ratio>0.7</mixing_ratio>
+                            <buf_size>3100</buf_size>
                         </info>
                         <commodities>
                             <item>
@@ -163,17 +175,29 @@
                     </stream>
                     <stream>
                         <info>
-                            <mixing_ratio>8.67881E-02</mixing_ratio>
-                            <buf_size>380</buf_size>
+                            <mixing_ratio>0.0506</mixing_ratio>
+                            <buf_size>250</buf_size>
                         </info>
                         <commodities>
                             <item>
-                                <commodity>pwr_tru_str</commodity>
+                                <commodity>blk_tru_str</commodity>
+                                <pref>100</pref>
+                            </item>
+                        </commodities>
+                    </stream>
+                    <stream>
+                        <info>
+                            <mixing_ratio>0.2494</mixing_ratio>
+                            <buf_size>1100</buf_size>
+                        </info>
+                        <commodities>
+                            <item>
+                                <commodity>ru_str</commodity>
                                 <pref>100</pref>
                             </item>
                             <item>
-                                <commodity>blk_tru_str</commodity>
-                                <pref>10</pref>
+                                <commodity>nu</commodity>
+                                <pref>1</pref>
                             </item>
                         </commodities>
                     </stream>
@@ -243,8 +267,8 @@
                 <in_streams>
                     <stream>
                         <info>
-                            <mixing_ratio>0.913212</mixing_ratio>
-                            <buf_size>4000</buf_size>
+                            <mixing_ratio>0.6850</mixing_ratio>
+                            <buf_size>3100</buf_size>
                         </info>
                         <commodities>
                             <item>
@@ -255,17 +279,29 @@
                     </stream>
                     <stream>
                         <info>
-                            <mixing_ratio>8.67881E-02</mixing_ratio>
-                            <buf_size>380</buf_size>
+                            <mixing_ratio>0.0509</mixing_ratio>
+                            <buf_size>250</buf_size>
                         </info>
                         <commodities>
                             <item>
-                                <commodity>pwr_tru_str</commodity>
-                                <pref>100</pref>
+                                <commodity>blk_tru_str</commodity>
+                                <pref>1000</pref>
+                            </item>
+                        </commodities>
+                    </stream>
+                    <stream>
+                        <info>
+                            <mixing_ratio>0.2641</mixing_ratio>
+                            <buf_size>1200</buf_size>
+                        </info>
+                        <commodities>
+                            <item>
+                                <commodity>ru_str</commodity>
+                                <pref>1000</pref>
                             </item>
                             <item>
-                                <commodity>blk_tru_str</commodity>
-                                <pref>10</pref>
+                                <commodity>nu</commodity>
+                                <pref>1</pref>
                             </item>
                         </commodities>
                     </stream>
@@ -335,8 +371,8 @@
                 <in_streams>
                     <stream>
                         <info>
-                            <mixing_ratio>0.913212</mixing_ratio>
-                            <buf_size>4000</buf_size>
+                            <mixing_ratio>0.6890</mixing_ratio>
+                            <buf_size>3100</buf_size>
                         </info>
                         <commodities>
                             <item>
@@ -347,17 +383,29 @@
                     </stream>
                     <stream>
                         <info>
-                            <mixing_ratio>8.67881E-02</mixing_ratio>
-                            <buf_size>380</buf_size>
+                            <mixing_ratio>0.0491</mixing_ratio>
+                            <buf_size>250</buf_size>
                         </info>
                         <commodities>
                             <item>
-                                <commodity>pwr_tru_str</commodity>
-                                <pref>100</pref>
+                                <commodity>blk_tru_str</commodity>
+                                <pref>10000</pref>
+                            </item>
+                        </commodities>
+                    </stream>
+                    <stream>
+                        <info>
+                            <mixing_ratio>0.2619</mixing_ratio>
+                            <buf_size>1200</buf_size>
+                        </info>
+                        <commodities>
+                            <item>
+                                <commodity>ru_str</commodity>
+                                <pref>10000</pref>
                             </item>
                             <item>
-                                <commodity>blk_tru_str</commodity>
-                                <pref>10</pref>
+                                <commodity>nu</commodity>
+                                <pref>1</pref>
                             </item>
                         </commodities>
                     </stream>
@@ -446,10 +494,6 @@
                             <item>
                                 <commodity>pwr_tru_str</commodity>
                                 <pref>100</pref>
-                            </item>
-                            <item>
-                                <commodity>blk_tru_str</commodity>
-                                <pref>10</pref>
                             </item>
                         </commodities>
                     </stream>

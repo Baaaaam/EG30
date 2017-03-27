@@ -89,9 +89,9 @@
                     <val>10000</val>
                     <val>100000</val>
                 </fuel_prefs>
-                <cycle_time>13</cycle_time>
+                <cycle_time>12</cycle_time>
                 <refuel_time>0</refuel_time>
-                <assem_size>4264.9</assem_size>
+                <assem_size>2881.3</assem_size>
                 <n_assem_core>4</n_assem_core>
                 <n_assem_batch>1</n_assem_batch>
                 <power_cap>400</power_cap>
@@ -129,9 +129,9 @@
                     <val>FBR_blanket_spent</val>
                 </fuel_outcommods>
 
-                <cycle_time>13</cycle_time>
+                <cycle_time>12</cycle_time>
                 <refuel_time>0</refuel_time>
-                <assem_size>931.1</assem_size>
+                <assem_size>2766.8</assem_size>
                 <n_assem_core>4</n_assem_core>
                 <n_assem_batch>1</n_assem_batch>
                 <power_cap>0.1</power_cap>
@@ -168,9 +168,9 @@
                     <val>FBR_blanket_spent</val>
                     <val>FBR_blanket_spent</val>
                 </fuel_outcommods>
-                <cycle_time>13</cycle_time>
+                <cycle_time>12</cycle_time>
                 <refuel_time>0</refuel_time>
-                <assem_size>643.74</assem_size>
+                <assem_size>2252.5</assem_size>
                 <n_assem_core>8</n_assem_core>
                 <n_assem_batch>1</n_assem_batch>
                 <power_cap>0.1</power_cap>
@@ -263,10 +263,18 @@
                             <buf_size>1e100</buf_size>
                             <efficiencies>
                                 <item> <comp>Pu</comp> <eff>9.88e-01</eff> </item>
-                                <item> <comp>U</comp>  <eff>9.88e-01</eff> </item>
                                 <item> <comp>Np</comp> <eff>9.88e-01</eff> </item>
                                 <item> <comp>Am</comp> <eff>9.88e-01</eff> </item>
                                 <item> <comp>Cm</comp> <eff>9.88e-01</eff> </item>
+                            </efficiencies>
+                        </info>
+                    </item>
+                    <item>
+                        <commod>ru</commod>
+                        <info>
+                            <buf_size>1e100</buf_size>
+                            <efficiencies>
+                                <item> <comp>U</comp>  <eff>9.88e-01</eff> </item>
                             </efficiencies>
                         </info>
                     </item>
@@ -276,6 +284,19 @@
                 <leftover_commod>waste</leftover_commod>
 
             </Separations>
+        </config>
+    </prototype>
+    
+    <prototype>
+        <name>Storage_ru</name>
+        <config>
+            <Storage>
+                <in_commods>
+                    <val>ru</val>
+                </in_commods>
+                <out_commods> <val>ru_str</val></out_commods>
+                <residence_time>0</residence_time>
+            </Storage>
         </config>
     </prototype>
 
