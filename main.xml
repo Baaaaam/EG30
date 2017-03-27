@@ -72,9 +72,7 @@
             <DeployInst>
                 <prototypes>
                     <val>waste</val>
-
                     <val>nu_src</val>
-
                     <val>leu_src</val>
 
 
@@ -87,7 +85,6 @@
 
                     <val>PWR_cooling</val>
                     <val>PWR_separation</val>
-
                     <val>PWR_fabrication</val>
 
                     <val>COOL</val>
@@ -96,6 +93,7 @@
                     <val>COOL_2</val>
                     <val>COOL_3</val>
                     <val>COOL_4</val>
+
                     <val>SEP</val>
                     <val>SEP_0</val>
                     <val>SEP_1</val>
@@ -115,22 +113,18 @@
 
                 <build_times>
                     <val>1</val>
-
-                    <val>1</val>
-
-                    <val>1</val>
-
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
                     <val>1</val>
                     <val>1</val>
 
                     <val>1</val>
                     <val>1</val>
-
+                    <val>1</val>
+                    <val>1</val>
                     <val>1</val>
 
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
 
                     <val>1</val>
                     <val>1</val>
@@ -138,6 +132,7 @@
                     <val>1</val>
                     <val>1</val>
                     <val>1</val>
+
                     <val>1</val>
                     <val>1</val>
                     <val>1</val>
@@ -157,9 +152,7 @@
 
                 <n_build>
                     <val>1</val>
-
                     <val>1</val>
-
                     <val>1</val>
 
                     <val>1</val>
@@ -178,6 +171,7 @@
                     <val>1</val>
                     <val>1</val>
                     <val>1</val>
+
                     <val>1</val>
                     <val>1</val>
                     <val>1</val>
@@ -185,10 +179,10 @@
                     <val>1</val>
                     <val>1</val>
 
-                    <val>36</val>
-                    <val>36</val>
-                    <val>36</val>
-                    <val>36</val>
+                    <val>50</val>
+                    <val>50</val>
+                    <val>50</val>
+                    <val>50</val>
                     <val>50</val>
 
                     <val>1</val>
