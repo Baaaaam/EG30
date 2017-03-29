@@ -83,11 +83,11 @@
                 </fuel_outcommods>
                 <fuel_prefs>
                     <val>1</val>
-                    <val>10</val>
-                    <val>100</val>
-                    <val>1000</val>
-                    <val>10000</val>
                     <val>100000</val>
+                    <val>10000</val>
+                    <val>1000</val>
+                    <val>100</val>
+                    <val>10</val>
                 </fuel_prefs>
                 <cycle_time>12</cycle_time>
                 <refuel_time>0</refuel_time>

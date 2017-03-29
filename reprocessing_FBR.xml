@@ -84,7 +84,7 @@
                     <stream>
                         <info>
                             <mixing_ratio>0.2275</mixing_ratio>
-                            <buf_size>1000</buf_size>
+                            <buf_size>10000</buf_size>
                         </info>
                         <commodities>
                             <item>
@@ -193,7 +193,7 @@
                         <commodities>
                             <item>
                                 <commodity>ru_str</commodity>
-                                <pref>100</pref>
+                                <pref>1000</pref>
                             </item>
                             <item>
                                 <commodity>nu</commodity>
@@ -297,7 +297,7 @@
                         <commodities>
                             <item>
                                 <commodity>ru_str</commodity>
-                                <pref>1000</pref>
+                                <pref>100</pref>
                             </item>
                             <item>
                                 <commodity>nu</commodity>
@@ -401,7 +401,7 @@
                         <commodities>
                             <item>
                                 <commodity>ru_str</commodity>
-                                <pref>10000</pref>
+                                <pref>10</pref>
                             </item>
                             <item>
                                 <commodity>nu</commodity>
