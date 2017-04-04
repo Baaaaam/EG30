@@ -21,12 +21,13 @@
         <spec> <lib>cycamore</lib> <name>FuelFab</name> </spec>
         <spec> <lib>cycamore</lib> <name>Separations</name> </spec>
         <spec> <lib>cycamore</lib> <name>Mixer</name> </spec>
+        <spec><lib>cyclass</lib><name>Reactor</name><alias>cyclassReactor</alias></spec>
+        <spec><lib>cyclass</lib><name>FuelFab</name><alias>cyclassFuelFab</alias></spec>
     </archetypes>
 
 
     <xi:include href="recipe.xml" xpointer="xpointer(//My_include/*)"/>
     <xi:include href="SFR-cycle.xml" xpointer="xpointer(//My_include/*)"/>
-    <xi:include href="reprocessing_FBR.xml" xpointer="xpointer(//My_include/*)"/>
     <xi:include href="LWR-cycle.xml" xpointer="xpointer(//My_include/*)"/>
 
     <prototype>
@@ -88,24 +89,8 @@
                     <val>PWR_fabrication</val>
 
                     <val>COOL</val>
-                    <val>COOL_0</val>
-                    <val>COOL_1</val>
-                    <val>COOL_2</val>
-                    <val>COOL_3</val>
-                    <val>COOL_4</val>
-
                     <val>SEP</val>
-                    <val>SEP_0</val>
-                    <val>SEP_1</val>
-                    <val>SEP_2</val>
-                    <val>SEP_3</val>
-                    <val>SEP_4</val>
-
                     <val>FAB</val>
-                    <val>FAB_1</val>
-                    <val>FAB_2</val>
-                    <val>FAB_3</val>
-                    <val>FAB_4</val>
 
                     <val>FBR_blanket_cooling</val>
                     <val>FBR_blanket_separation</val>
@@ -126,22 +111,6 @@
                     <val>1</val>
                     <val>1</val>
 
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-
-                    <val>1</val>
-                    <val>1</val>
                     <val>1</val>
                     <val>1</val>
                     <val>1</val>
@@ -167,22 +136,6 @@
 
                     <val>1</val>
                     <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-
-                    <val>300</val>
-                    <val>300</val>
-                    <val>300</val>
-                    <val>300</val>
                     <val>300</val>
 
                     <val>1</val>
@@ -917,18 +870,18 @@
         </config>
     </prototype>
 
-  <prototype>
-    <name>FBR_plant</name>
-    <config>
-      <GroupInst>
-        <prototypes>
-            <val>FBR_driver</val>
-            <val>FBR_in_blanket</val>
-            <val>FBR_out_blanket</val>
-        </prototypes>
-      </GroupInst>
-    </config>
-  </prototype>
+    <prototype>
+        <name>FBR_plant</name>
+        <config>
+            <GroupInst>
+                <prototypes>
+                    <val>FBR_driver</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_out_blanket</val>
+                </prototypes>
+            </GroupInst>
+        </config>
+    </prototype>
 
     <agent> <name>deployer_3</name> <prototype>deployer_FBR_init_CHAIN</prototype> </agent>
 
