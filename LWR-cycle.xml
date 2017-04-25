@@ -2,50 +2,50 @@
     <prototype>
         <name>PWR_fabrication</name>
         <config>
-            <Mixer>
-                <in_streams>
-                    <stream>
-                        <info>
-                            <mixing_ratio>0.05</mixing_ratio> <!-- throughput * mixing_ratio = 29586.0 * 0.879677 -->
-                            <buf_size>400</buf_size>
-                        </info>
-                        <commodities>
-                            <item>
-                                <commodity>blk_tru_str</commodity>
-                                <pref>1</pref>
-                            </item>
-                        </commodities>
-                    </stream>
-                    <stream>
-                        <info>
-                            <mixing_ratio>0.95</mixing_ratio> <!-- throughput * mixing_ratio = 29586.0 * 0.120323 -->
-                            <buf_size>7200</buf_size>
-                        </info>
-                        <commodities>
-                            <item>
-                                <commodity>nu</commodity>
-                                <pref>1</pref>
-                            </item>
-                        </commodities>
-                    </stream>
-                </in_streams>
-                <out_commod>PWR_MOX_new</out_commod>
-                <throughput>7500</throughput> <!-- 1 Core / month -->
-                <out_buf_size>30000</out_buf_size>
-            </Mixer>
+            <cyclassFuelFab>
+
+                <eq_model>MLP_Kinf</eq_model>
+                <eq_command>/Users/mouginot/work/MODEL/MODEL_TRU/pwr/EQM/weights/REP_MOX_TRU_34.2262Wg.xml,/Users/mouginot/work/MODEL/MODEL_TRU/pwr/EQM/weights/REP_MOX_TRU_34.2262Wg.nfo,3,1.034</eq_command>
+
+                <fiss_commods>
+                    <val>blk_tru_str</val>
+                </fiss_commods>
+                <fiss_commod_prefs>
+                    <val>1.0</val>
+                </fiss_commod_prefs>
+                <fiss_size>89000</fiss_size>
+
+
+                <fill_commods>
+                    <val>nu</val>
+                </fill_commods>
+                <fill_recipe>nu</fill_recipe>
+                <fill_commod_prefs>
+                    <val>1.0</val>
+                </fill_commod_prefs>
+                <fill_size>89000</fill_size>
+
+                <throughput>89000</throughput>
+                <outcommod>PWR_MOX_new</outcommod>
+            </cyclassFuelFab>
         </config>
     </prototype>
-
 
 
     <prototype>
         <name>PWR</name>
         <lifetime>720</lifetime>
         <config>
-            <Reactor>
-                <fuel_inrecipes>
-                    <val>PWR_MOX_N</val>
-                </fuel_inrecipes>
+            <cyclassReactor>
+                <eq_model>MLP_Kinf</eq_model>
+                <eq_command>/Users/mouginot/work/MODEL/MODEL_TRU/pwr/EQM/weights/REP_MOX_TRU_34.2262Wg.xml,/Users/mouginot/work/MODEL/MODEL_TRU/pwr/EQM/weights/REP_MOX_TRU_34.2262Wg.nfo,3,1.034</eq_command>
+
+                <ir_model>RK4</ir_model>
+                <ir_command>none</ir_command>
+
+                <xs_model>XSM_MLP</xs_model>
+                <xs_command>/Users/mouginot/work/MODEL/MODEL_TRU/pwr/XS/Generate/weights/,Data_Base_Info.nfo,false</xs_command>
+
                 <fuel_incommods>
                     <val>PWR_MOX_new</val>
                 </fuel_incommods>
@@ -53,20 +53,19 @@
                     <val>10</val>
                 </fuel_prefs>
 
-                <fuel_outrecipes> 
-                    <val>PWR_MOX_S</val>
-                </fuel_outrecipes>
-                <fuel_outcommods> 
+                <fuel_outcommods>
                     <val>PWR_MOX_spent</val>
                 </fuel_outcommods>
-                <cycle_time>18</cycle_time> <!-- BU/30days *Mcore/batch / P_eff = 50./(30)*88758./3./(3000*0.9) -->
+                <cycle_time>50</cycle_time> <!-- BU/30days *Mcore/batch / P_eff = 50./(30)*88758./3./(3000*0.9) -->
                 <refuel_time>0</refuel_time>
-                <assem_size>29586.0</assem_size><!-- Core_inv / Core_Ass = 88758 / 3. -->
-                <n_assem_core>3</n_assem_core>
+                <assem_size>88758</assem_size><!-- Core_inv / Core_Ass = 88758 / 3. -->
+                <n_assem_core>1</n_assem_core>
                 <n_assem_batch>1</n_assem_batch>
                 <power_cap>1000</power_cap> <!-- P_th * Ef_th * Cap_fac = 3000*33.333%*0.9 -->
+                <power>3000</power>
+                <burnup>50</burnup>
 
-            </Reactor>
+            </cyclassReactor>
         </config>
     </prototype>
 
@@ -106,7 +105,7 @@
                             <buf_size>1e100</buf_size>
                             <efficiencies>
                                 <item> <comp>Pu</comp> <eff>9.88E-01</eff> </item>
-                                <item> <comp>U</comp>  <eff>1.99320E-01</eff> </item>
+                                <item> <comp>U</comp>  <eff>3.952E-01</eff> </item>
                                 <item> <comp>Np</comp> <eff>9.88E-01</eff> </item>
                                 <item> <comp>Am</comp> <eff>9.88E-01</eff> </item>
                                 <item> <comp>Cm</comp> <eff>9.88E-01</eff> </item>
@@ -118,7 +117,7 @@
                         <info>
                             <buf_size>1e100</buf_size>
                             <efficiencies>
-                                <item> <comp>U</comp>  <eff>7.88680E-01</eff> </item>
+                                <item> <comp>U</comp>  <eff>5.928E-01</eff> </item>
                             </efficiencies>
                         </info>
                     </item>
