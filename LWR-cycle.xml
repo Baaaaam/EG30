@@ -5,7 +5,7 @@
             <cyclassFuelFab>
 
                 <eq_model>MLP_Kinf</eq_model>
-                <eq_command>/Users/mouginot/work/MODEL/MODEL_TRU/pwr/EQM/weights/REP_MOX_TRU_34.2262Wg.xml,/Users/mouginot/work/MODEL/MODEL_TRU/pwr/EQM/weights/REP_MOX_TRU_34.2262Wg.nfo,3,1.034</eq_command>
+                <eq_command>/Users/mouginot/work/MODEL/MODEL_TRU/pwr/EQM/weights/REP_MOX_TRU_34.2262Wg.xml,/Users/mouginot/work/MODEL/MODEL_TRU/pwr/EQM/weights/REP_MOX_TRU_34.2262Wg.nfo,4,1.034</eq_command>
 
                 <fiss_commods>
                     <val>blk_tru_str</val>
@@ -38,7 +38,7 @@
         <config>
             <cyclassReactor>
                 <eq_model>MLP_Kinf</eq_model>
-                <eq_command>/Users/mouginot/work/MODEL/MODEL_TRU/pwr/EQM/weights/REP_MOX_TRU_34.2262Wg.xml,/Users/mouginot/work/MODEL/MODEL_TRU/pwr/EQM/weights/REP_MOX_TRU_34.2262Wg.nfo,3,1.034</eq_command>
+                <eq_command>/Users/mouginot/work/MODEL/MODEL_TRU/pwr/EQM/weights/REP_MOX_TRU_34.2262Wg.xml,/Users/mouginot/work/MODEL/MODEL_TRU/pwr/EQM/weights/REP_MOX_TRU_34.2262Wg.nfo,4,1.034</eq_command>
 
                 <ir_model>RK4</ir_model>
                 <ir_command>none</ir_command>
@@ -113,7 +113,7 @@
                         </info>
                     </item>
                     <item>
-                        <commod>pwr_u</commod>
+                        <commod>ru</commod>
                         <info>
                             <buf_size>1e100</buf_size>
                             <efficiencies>
