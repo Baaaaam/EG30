@@ -2,3 +2,4 @@ cyclus.sqlite
 cyclus.sqlite_cyan
 cyclus.sqlite_*
 *.log
+*.sqlite
