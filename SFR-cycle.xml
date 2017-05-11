@@ -134,7 +134,7 @@
                 </fuel_inrecipes>
 
                 <fuel_incommods>
-                    <val>pwr_u_str</val>
+                    <val>ru_str</val>
                     <val>nu</val>
                 </fuel_incommods>
 
@@ -285,20 +285,14 @@
                         <info>
                             <buf_size>1e100</buf_size>
                             <efficiencies>
-                                <item> <comp>U</comp>  <eff>9.e-01</eff> </item>
+                                <item> <comp>234U</comp>  <eff>9.88e-01</eff> </item>
+                                <item> <comp>235U</comp>  <eff>9.88e-01</eff> </item>
+                                <item> <comp>236U</comp>  <eff>9.88e-01</eff> </item>
+                                <item> <comp>238U</comp>  <eff>9.88e-01</eff> </item>
                                 <item> <comp>Pu</comp> <eff>9.88e-01</eff> </item>
                                 <item> <comp>Np</comp> <eff>9.88e-01</eff> </item>
                                 <item> <comp>Am</comp> <eff>9.88e-01</eff> </item>
                                 <item> <comp>Cm</comp> <eff>9.88e-01</eff> </item>
-                            </efficiencies>
-                        </info>
-                    </item>
-                    <item>
-                        <commod>ru</commod>
-                        <info>
-                            <buf_size>1e100</buf_size>
-                            <efficiencies>
-                                <item> <comp>U</comp>  <eff>0.88E-01</eff> </item>
                             </efficiencies>
                         </info>
                     </item>

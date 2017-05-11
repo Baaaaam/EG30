@@ -105,7 +105,10 @@
                             <buf_size>1e100</buf_size>
                             <efficiencies>
                                 <item> <comp>Pu</comp> <eff>9.88E-01</eff> </item>
-                                <item> <comp>U</comp>  <eff>3.952E-01</eff> </item>
+                                <item> <comp>234U</comp>  <eff>3.952E-01</eff> </item>
+                                <item> <comp>235U</comp>  <eff>3.952E-01</eff> </item>
+                                <item> <comp>236U</comp>  <eff>3.952E-01</eff> </item>
+                                <item> <comp>238U</comp>  <eff>3.952E-01</eff> </item>
                                 <item> <comp>Np</comp> <eff>9.88E-01</eff> </item>
                                 <item> <comp>Am</comp> <eff>9.88E-01</eff> </item>
                                 <item> <comp>Cm</comp> <eff>9.88E-01</eff> </item>
@@ -117,7 +120,8 @@
                         <info>
                             <buf_size>1e100</buf_size>
                             <efficiencies>
-                                <item> <comp>U</comp>  <eff>5.928E-01</eff> </item>
+                                <item> <comp>235U</comp>  <eff>3.952E-01</eff> </item>
+                                <item> <comp>238U</comp>  <eff>3.952E-01</eff> </item>
                             </efficiencies>
                         </info>
                     </item>
