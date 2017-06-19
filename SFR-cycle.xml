@@ -174,7 +174,7 @@
                 </fuel_inrecipes>
 
                 <fuel_incommods>
-                    <val>ru_str</val>
+                    <val>pwr_u_str</val>
                     <val>nu</val>
                 </fuel_incommods>
 
@@ -191,6 +191,23 @@
                     <val>FBR_blanket_spent</val>
                     <val>FBR_blanket_spent</val>
                 </fuel_outcommods>
+
+                <pref_change_ti_times>
+                    <val>1200</val>
+                    <val>1200</val>
+                </pref_change_ti_times>
+
+                <pref_change_ti_commods>
+                    <val>pwr_u_str</val>
+                    <val>nu</val>
+                </pref_change_ti_commods>
+                
+                <pref_change_ti_values>
+                    <val>-1</val>
+                    <val>-1</val>
+                </pref_change_ti_values>
+                
+                
                 <cycle_time>12</cycle_time>
                 <refuel_time>0</refuel_time>
                 <assem_size>2252.5</assem_size>
