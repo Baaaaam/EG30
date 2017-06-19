@@ -55,7 +55,7 @@
             <cyclassFuelFab>
 
                 <eq_model>FBR_MLP_Keff</eq_model>
-                <eq_command>/Users/mouginot/work/MODEL/MODEL_TRU/rnr/EQM/weights/TMVARegression_MLP_k_eff.weights.xml,1.034,/Users/mouginot/work/MODEL/MODEL_TRU/rnr/EQM/RNR_MOX_48.1155Wg.nfo</eq_command>
+                <eq_command>/Users/mouginot/work/MODEL/RNR/EQM/weights/TMVARegression_MLP_k_eff.weights.xml,1.034,/Users/mouginot/work/MODEL/RNR/EQM/RNR_MOX_48.1155Wg.nfo</eq_command>
                 <fiss_commods>
                     <val>FBR_TRU</val>
                 </fiss_commods>
@@ -84,13 +84,13 @@
         <config>
             <cyclassReactor>
                 <eq_model>FBR_MLP_Keff</eq_model>
-                <eq_command>/Users/mouginot/work/MODEL/MODEL_TRU/rnr/EQM/weights/TMVARegression_MLP_k_eff.weights.xml,1.034,/Users/mouginot/work/MODEL/MODEL_TRU/rnr/EQM/RNR_MOX_48.1155Wg.nfo</eq_command>
+                <eq_command>/Users/mouginot/work/MODEL/RNR/EQM/weights/TMVARegression_MLP_k_eff.weights.xml,1.034,/Users/mouginot/work/MODEL/RNR/EQM/RNR_MOX_48.1155Wg.nfo</eq_command>
 
                 <ir_model>RK4</ir_model>
                 <ir_command>none</ir_command>
 
                 <xs_model>XSM_MLP</xs_model>
-                <xs_command>/Users/mouginot/work/MODEL/MODEL_TRU/rnr/XS/weights,/../Data_Base_Info.nfo,false</xs_command>
+                <xs_command>/Users/mouginot/work/MODEL/RNR/XS/weights,/../Data_Base_Info.nfo,false</xs_command>
                 <fuel_incommods>
                     <val>FBR_LEU_N</val>
                     <val>FBR_MOX_N</val>
