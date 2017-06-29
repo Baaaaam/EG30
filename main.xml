@@ -12,15 +12,15 @@
 
     <archetypes>
         <spec> <lib>cycamore</lib> <name>Source</name></spec>
-        <spec> <lib>cycamore</lib> <name>GroupInst</name></spec>
         <spec> <lib>cycamore</lib> <name>DeployInst</name></spec>
         <spec> <lib>cycamore</lib> <name>Sink</name></spec>
-        <spec> <lib>cycamore</lib> <name>Enrichment</name> </spec>
-        <spec> <lib>cycamore</lib> <name>Reactor</name> </spec>
+        <spec> <lib>cycamore</lib> <name>Separations</name> </spec>
         <spec> <lib>cycamore</lib> <name>Storage</name> </spec>
         <spec> <lib>cycamore</lib> <name>FuelFab</name> </spec>
-        <spec> <lib>cycamore</lib> <name>Separations</name> </spec>
-        <spec> <lib>cycamore</lib> <name>Mixer</name> </spec>
+        <spec> <lib>cyfco</lib> <name>Enrichment</name> </spec>
+        <spec> <lib>cyfco</lib> <name>Reactor</name> </spec>
+        <spec> <lib>cyfco</lib> <name>GroupInst</name></spec>
+        <spec> <lib>cyfco</lib> <name>Mixer</name> </spec>
     </archetypes>
 
 
@@ -193,6 +193,8 @@
     </prototype>
 
 
+
+
     <agent> <name>deployer_1</name> <prototype>deployer_main_CHAIN</prototype> </agent>
 
 
@@ -201,14 +203,6 @@
         <config>
             <DeployInst>
                 <prototypes>
-                    <val>PWR</val>
-                    <val>PWR</val>
-                    <val>PWR</val>
-                    <val>PWR</val>
-                    <val>PWR</val>
-                    <val>PWR</val>
-                    <val>PWR</val>
-                    <val>PWR</val>
                     <val>PWR</val>
                     <val>PWR</val>
                     <val>PWR</val>
@@ -229,44 +223,20 @@
                     <val>1</val>
                     <val>1</val>
                     <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
                 </build_times>
                 <lifetimes>
                     <val>181</val>
-                    <val>205</val>
                     <val>229</val>
-                    <val>253</val>
                     <val>277</val>
-                    <val>301</val>
                     <val>325</val>
-                    <val>349</val>
                     <val>373</val>
-                    <val>397</val>
                     <val>421</val>
-                    <val>445</val>
                     <val>469</val>
-                    <val>493</val>
                     <val>517</val>
-                    <val>541</val>
                     <val>565</val>
                 </lifetimes>
 
                 <n_build>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
                     <val>1</val>
                     <val>1</val>
                     <val>1</val>
@@ -295,43 +265,19 @@
                     <val>PWR</val>
                     <val>PWR</val>
                     <val>PWR</val>
-                    <val>PWR</val>
-                    <val>PWR</val>
-                    <val>PWR</val>
-                    <val>PWR</val>
-                    <val>PWR</val>
-                    <val>PWR</val>
-                    <val>PWR</val>
-                    <val>PWR</val>
                 </prototypes>
                 <build_times>
                     <val>181</val>
-                    <val>205</val>
                     <val>229</val>
-                    <val>253</val>
                     <val>277</val>
-                    <val>301</val>
                     <val>325</val>
-                    <val>349</val>
                     <val>373</val>
-                    <val>397</val>
                     <val>421</val>
-                    <val>445</val>
                     <val>469</val>
-                    <val>493</val>
                     <val>517</val>
-                    <val>541</val>
                     <val>565</val>
                 </build_times>
                 <n_build>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
                     <val>1</val>
                     <val>1</val>
                     <val>1</val>
@@ -360,43 +306,19 @@
                     <val>PWR</val>
                     <val>PWR</val>
                     <val>PWR</val>
-                    <val>PWR</val>
-                    <val>PWR</val>
-                    <val>PWR</val>
-                    <val>PWR</val>
-                    <val>PWR</val>
-                    <val>PWR</val>
-                    <val>PWR</val>
-                    <val>PWR</val>
                 </prototypes>
                 <build_times>
                     <val>901</val>
-                    <val>925</val>
                     <val>949</val>
-                    <val>973</val>
                     <val>997</val>
-                    <val>1021</val>
                     <val>1045</val>
-                    <val>1069</val>
                     <val>1093</val>
-                    <val>1117</val>
                     <val>1141</val>
-                    <val>1165</val>
                     <val>1189</val>
-                    <val>1213</val>
                     <val>1237</val>
-                    <val>1261</val>
                     <val>1285</val>
                 </build_times>
                 <n_build>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
                     <val>1</val>
                     <val>1</val>
                     <val>1</val>
@@ -426,43 +348,19 @@
                     <val>PWR</val>
                     <val>PWR</val>
                     <val>PWR</val>
-                    <val>PWR</val>
-                    <val>PWR</val>
-                    <val>PWR</val>
-                    <val>PWR</val>
-                    <val>PWR</val>
-                    <val>PWR</val>
-                    <val>PWR</val>
-                    <val>PWR</val>
                 </prototypes>
                 <build_times>
                     <val>1621</val>
-                    <val>1645</val>
                     <val>1669</val>
-                    <val>1693</val>
                     <val>1717</val>
-                    <val>1741</val>
                     <val>1765</val>
-                    <val>1789</val>
                     <val>1813</val>
-                    <val>1837</val>
                     <val>1861</val>
-                    <val>1885</val>
                     <val>1909</val>
-                    <val>1933</val>
                     <val>1957</val>
-                    <val>1981</val>
                     <val>2005</val>
                 </build_times>
                 <n_build>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
                     <val>1</val>
                     <val>1</val>
                     <val>1</val>
@@ -501,23 +399,6 @@
                     <val>FBR_driver</val>
                     <val>FBR_driver</val>
                     <val>FBR_driver</val>
-                    <val>FBR_driver</val>
-                    <val>FBR_driver</val>
-                    <val>FBR_driver</val>
-                    <val>FBR_driver</val>
-                    <val>FBR_driver</val>
-                    <val>FBR_driver</val>
-                    <val>FBR_driver</val>
-                    <val>FBR_driver</val>
-                    <val>FBR_driver</val>
-                    <val>FBR_driver</val>
-                    <val>FBR_driver</val>
-                    <val>FBR_driver</val>
-                    <val>FBR_driver</val>
-                    <val>FBR_driver</val>
-                    <val>FBR_driver</val>
-                    <val>FBR_driver</val>
-                    <val>FBR_driver</val>
                     <val>FBR_in_blanket</val>
                     <val>FBR_in_blanket</val>
                     <val>FBR_in_blanket</val>
@@ -536,40 +417,6 @@
                     <val>FBR_in_blanket</val>
                     <val>FBR_in_blanket</val>
                     <val>FBR_in_blanket</val>
-                    <val>FBR_in_blanket</val>
-                    <val>FBR_in_blanket</val>
-                    <val>FBR_in_blanket</val>
-                    <val>FBR_in_blanket</val>
-                    <val>FBR_in_blanket</val>
-                    <val>FBR_in_blanket</val>
-                    <val>FBR_in_blanket</val>
-                    <val>FBR_in_blanket</val>
-                    <val>FBR_in_blanket</val>
-                    <val>FBR_in_blanket</val>
-                    <val>FBR_in_blanket</val>
-                    <val>FBR_in_blanket</val>
-                    <val>FBR_in_blanket</val>
-                    <val>FBR_in_blanket</val>
-                    <val>FBR_in_blanket</val>
-                    <val>FBR_in_blanket</val>
-                    <val>FBR_in_blanket</val>
-                    <val>FBR_out_blanket</val>
-                    <val>FBR_out_blanket</val>
-                    <val>FBR_out_blanket</val>
-                    <val>FBR_out_blanket</val>
-                    <val>FBR_out_blanket</val>
-                    <val>FBR_out_blanket</val>
-                    <val>FBR_out_blanket</val>
-                    <val>FBR_out_blanket</val>
-                    <val>FBR_out_blanket</val>
-                    <val>FBR_out_blanket</val>
-                    <val>FBR_out_blanket</val>
-                    <val>FBR_out_blanket</val>
-                    <val>FBR_out_blanket</val>
-                    <val>FBR_out_blanket</val>
-                    <val>FBR_out_blanket</val>
-                    <val>FBR_out_blanket</val>
-                    <val>FBR_out_blanket</val>
                     <val>FBR_out_blanket</val>
                     <val>FBR_out_blanket</val>
                     <val>FBR_out_blanket</val>
@@ -591,57 +438,6 @@
                 </prototypes>
 
                 <build_times>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
                     <val>1</val>
                     <val>1</val>
                     <val>1</val>
@@ -700,108 +496,57 @@
 
                 <lifetimes>
                     <val>181</val>
-                    <val>193</val>
                     <val>205</val>
-                    <val>217</val>
                     <val>229</val>
-                    <val>241</val>
                     <val>253</val>
-                    <val>265</val>
                     <val>277</val>
-                    <val>289</val>
                     <val>301</val>
-                    <val>313</val>
                     <val>325</val>
-                    <val>337</val>
                     <val>349</val>
-                    <val>361</val>
                     <val>373</val>
-                    <val>385</val>
                     <val>397</val>
-                    <val>409</val>
                     <val>421</val>
-                    <val>433</val>
                     <val>445</val>
-                    <val>457</val>
                     <val>469</val>
-                    <val>481</val>
                     <val>493</val>
-                    <val>505</val>
                     <val>517</val>
-                    <val>529</val>
                     <val>541</val>
-                    <val>553</val>
-                    <val>565</val>
                     <val>577</val>
                     <val>589</val>
                     <val>181</val>
-                    <val>193</val>
                     <val>205</val>
-                    <val>217</val>
                     <val>229</val>
-                    <val>241</val>
                     <val>253</val>
-                    <val>265</val>
                     <val>277</val>
-                    <val>289</val>
                     <val>301</val>
-                    <val>313</val>
                     <val>325</val>
-                    <val>337</val>
                     <val>349</val>
-                    <val>361</val>
                     <val>373</val>
-                    <val>385</val>
                     <val>397</val>
-                    <val>409</val>
                     <val>421</val>
-                    <val>433</val>
                     <val>445</val>
-                    <val>457</val>
                     <val>469</val>
-                    <val>481</val>
                     <val>493</val>
-                    <val>505</val>
                     <val>517</val>
-                    <val>529</val>
                     <val>541</val>
-                    <val>553</val>
-                    <val>565</val>
                     <val>577</val>
                     <val>589</val>
                     <val>181</val>
-                    <val>193</val>
                     <val>205</val>
-                    <val>217</val>
                     <val>229</val>
-                    <val>241</val>
                     <val>253</val>
-                    <val>265</val>
                     <val>277</val>
-                    <val>289</val>
                     <val>301</val>
-                    <val>313</val>
                     <val>325</val>
-                    <val>337</val>
                     <val>349</val>
-                    <val>361</val>
                     <val>373</val>
-                    <val>385</val>
                     <val>397</val>
-                    <val>409</val>
                     <val>421</val>
-                    <val>433</val>
                     <val>445</val>
-                    <val>457</val>
                     <val>469</val>
-                    <val>481</val>
                     <val>493</val>
-                    <val>505</val>
                     <val>517</val>
-                    <val>529</val>
                     <val>541</val>
-                    <val>553</val>
-                    <val>565</val>
                     <val>577</val>
                     <val>589</val>
                 </lifetimes>
@@ -817,7 +562,6 @@
                     <val>6</val>
                     <val>6</val>
                     <val>6</val>
-                    <val>4</val>
                     <val>6</val>
                     <val>6</val>
                     <val>6</val>
@@ -838,56 +582,6 @@
                     <val>6</val>
                     <val>6</val>
                     <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>4</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>4</val>
                     <val>6</val>
                     <val>6</val>
                     <val>6</val>
@@ -917,18 +611,18 @@
         </config>
     </prototype>
 
-  <prototype>
-    <name>FBR_plant</name>
-    <config>
-      <GroupInst>
-        <prototypes>
-            <val>FBR_driver</val>
-            <val>FBR_in_blanket</val>
-            <val>FBR_out_blanket</val>
-        </prototypes>
-      </GroupInst>
-    </config>
-  </prototype>
+    <prototype>
+        <name>FBR_plant</name>
+        <config>
+            <GroupInst>
+                <prototypes>
+                    <val>FBR_driver</val>
+                    <val>FBR_in_blanket</val>
+                    <val>FBR_out_blanket</val>
+                </prototypes>
+            </GroupInst>
+        </config>
+    </prototype>
 
     <agent> <name>deployer_3</name> <prototype>deployer_FBR_init_CHAIN</prototype> </agent>
 
@@ -955,59 +649,25 @@
                     <val>FBR_plant</val>
                     <val>FBR_plant</val>
                     <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
                 </prototypes>
 
                 <build_times>
                     <val>181</val>
-                    <val>193</val>
                     <val>205</val>
-                    <val>217</val>
                     <val>229</val>
-                    <val>241</val>
                     <val>253</val>
-                    <val>265</val>
                     <val>277</val>
-                    <val>289</val>
                     <val>301</val>
-                    <val>313</val>
                     <val>325</val>
-                    <val>337</val>
                     <val>349</val>
-                    <val>361</val>
                     <val>373</val>
-                    <val>385</val>
                     <val>397</val>
-                    <val>409</val>
                     <val>421</val>
-                    <val>433</val>
                     <val>445</val>
-                    <val>457</val>
                     <val>469</val>
-                    <val>481</val>
                     <val>493</val>
-                    <val>505</val>
                     <val>517</val>
-                    <val>529</val>
                     <val>541</val>
-                    <val>553</val>
-                    <val>565</val>
                     <val>577</val>
                     <val>589</val>
                 </build_times>
@@ -1018,24 +678,7 @@
                     <val>6</val>
                     <val>6</val>
                     <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
                     <val>4</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
                     <val>6</val>
                     <val>6</val>
                     <val>6</val>
@@ -1077,60 +720,26 @@
                     <val>FBR_plant</val>
                     <val>FBR_plant</val>
                     <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
                 </prototypes>
 
                 <build_times>
                     <val>901</val>
-                    <val>913</val>
                     <val>925</val>
-                    <val>937</val>
                     <val>949</val>
-                    <val>961</val>
                     <val>973</val>
-                    <val>985</val>
                     <val>997</val>
-                    <val>1009</val>
                     <val>1021</val>
-                    <val>1033</val>
                     <val>1045</val>
-                    <val>1057</val>
                     <val>1069</val>
-                    <val>1081</val>
                     <val>1093</val>
-                    <val>1105</val>
                     <val>1117</val>
-                    <val>1129</val>
                     <val>1141</val>
-                    <val>1153</val>
                     <val>1165</val>
-                    <val>1177</val>
                     <val>1189</val>
-                    <val>1201</val>
                     <val>1213</val>
-                    <val>1225</val>
                     <val>1237</val>
-                    <val>1249</val>
                     <val>1261</val>
-                    <val>1273</val>
                     <val>1285</val>
-                    <val>1297</val>
                     <val>1309</val>
                 </build_times>
 
@@ -1140,24 +749,7 @@
                     <val>6</val>
                     <val>6</val>
                     <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
                     <val>4</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
                     <val>6</val>
                     <val>6</val>
                     <val>6</val>
@@ -1199,60 +791,26 @@
                     <val>FBR_plant</val>
                     <val>FBR_plant</val>
                     <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
-                    <val>FBR_plant</val>
                 </prototypes>
 
                 <build_times>
                     <val>1621</val>
-                    <val>1633</val>
                     <val>1645</val>
-                    <val>1657</val>
                     <val>1669</val>
-                    <val>1681</val>
                     <val>1693</val>
-                    <val>1705</val>
                     <val>1717</val>
-                    <val>1729</val>
                     <val>1741</val>
-                    <val>1753</val>
                     <val>1765</val>
-                    <val>1777</val>
                     <val>1789</val>
-                    <val>1801</val>
                     <val>1813</val>
-                    <val>1825</val>
                     <val>1837</val>
-                    <val>1849</val>
                     <val>1861</val>
-                    <val>1873</val>
                     <val>1885</val>
-                    <val>1897</val>
                     <val>1909</val>
-                    <val>1921</val>
                     <val>1933</val>
-                    <val>1945</val>
                     <val>1957</val>
-                    <val>1969</val>
                     <val>1981</val>
-                    <val>1993</val>
                     <val>2005</val>
-                    <val>2017</val>
                     <val>2029</val>
                 </build_times>
 
@@ -1262,24 +820,7 @@
                     <val>6</val>
                     <val>6</val>
                     <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
                     <val>4</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
-                    <val>6</val>
                     <val>6</val>
                     <val>6</val>
                     <val>6</val>

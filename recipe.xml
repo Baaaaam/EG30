@@ -3,26 +3,8 @@
   <recipe>
     <name>nu</name>
     <basis>mass</basis>
-    <nuclide><id>U234</id>   <comp>7.11000E-03</comp> </nuclide>
-    <nuclide><id>U235</id>   <comp>0.00000E+00</comp> </nuclide>
-    <nuclide><id>U236</id>   <comp>9.92890E-01</comp> </nuclide>
-    <nuclide><id>U238</id>   <comp>0.00000E+00</comp> </nuclide>
-    <nuclide><id>NP237</id>  <comp>0.00000E+00</comp> </nuclide>
-    <nuclide><id>PU236</id>  <comp>0.00000E+00</comp> </nuclide>
-    <nuclide><id>PU238</id>  <comp>0.00000E+00</comp> </nuclide>
-    <nuclide><id>PU239</id>  <comp>0.00000E+00</comp> </nuclide>
-    <nuclide><id>PU240</id>  <comp>0.00000E+00</comp> </nuclide>
-    <nuclide><id>PU241</id>  <comp>0.00000E+00</comp> </nuclide>
-    <nuclide><id>PU242</id>  <comp>0.00000E+00</comp> </nuclide>
-    <nuclide><id>AM241</id>  <comp>0.00000E+00</comp> </nuclide>
-    <nuclide><id>AM242M</id> <comp>0.00000E+00</comp> </nuclide>
-    <nuclide><id>AM243</id>  <comp>0.00000E+00</comp> </nuclide>
-    <nuclide><id>CM242</id>  <comp>0.00000E+00</comp> </nuclide>
-    <nuclide><id>CM243</id>  <comp>0.00000E+00</comp> </nuclide>
-    <nuclide><id>CM244</id>  <comp>0.00000E+00</comp> </nuclide>
-    <nuclide><id>CM245</id>  <comp>0.00000E+00</comp> </nuclide>
-    <nuclide><id>CM246</id>  <comp>0.00000E+00</comp> </nuclide>
-    <nuclide><id>CS237</id>  <comp>0.00000E+00</comp> </nuclide>
+    <nuclide><id>U235</id>   <comp>7.11000E-03</comp> </nuclide>
+    <nuclide><id>U238</id>   <comp>9.92890E-01</comp> </nuclide>
   </recipe>
 
 
