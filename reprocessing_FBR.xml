@@ -84,7 +84,7 @@
                     <stream>
                         <info>
                             <mixing_ratio>0.2275</mixing_ratio>
-                            <buf_size>10000</buf_size>
+                            <buf_size>1100</buf_size>
                         </info>
                         <commodities>
                             <item>
