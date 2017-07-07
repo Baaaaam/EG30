@@ -12,15 +12,15 @@
 
     <archetypes>
         <spec> <lib>cycamore</lib> <name>Source</name></spec>
-        <spec> <lib>cycamore</lib> <name>GroupInst</name></spec>
         <spec> <lib>cycamore</lib> <name>DeployInst</name></spec>
         <spec> <lib>cycamore</lib> <name>Sink</name></spec>
-        <spec> <lib>cycamore</lib> <name>Enrichment</name> </spec>
-        <spec> <lib>cycamore</lib> <name>Reactor</name> </spec>
+        <spec> <lib>cycamore</lib> <name>Separations</name> </spec>
         <spec> <lib>cycamore</lib> <name>Storage</name> </spec>
         <spec> <lib>cycamore</lib> <name>FuelFab</name> </spec>
-        <spec> <lib>cycamore</lib> <name>Separations</name> </spec>
-        <spec> <lib>cycamore</lib> <name>Mixer</name> </spec>
+        <spec> <lib>cyfco</lib> <name>Enrichment</name> </spec>
+        <spec> <lib>cyfco</lib> <name>Reactor</name> </spec>
+        <spec> <lib>cyfco</lib> <name>GroupInst</name></spec>
+        <spec> <lib>cyfco</lib> <name>Mixer</name> </spec>
         <spec><lib>cyclass</lib><name>Reactor</name><alias>cyclassReactor</alias></spec>
         <spec><lib>cyclass</lib><name>FuelFab</name><alias>cyclassFuelFab</alias></spec>
     </archetypes>
